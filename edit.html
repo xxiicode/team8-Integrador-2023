@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT</title>
+</head>
+
+<body>
+    <main>
+        <h2>EDITAR ITEM</h2>
+        <form action="">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria">
+                <option value="figuras">Figuras</option>
+                <!-- <option value=""></option> -->
+                <!-- <option value=""></option> -->
+            </select>
+            <label for="licencia">Licencia:</label>
+            <select id="licencia" name="licenciia">
+                <option value="Naruto">Naruto Shippuden</option>
+            </select><br>
+            <label for="nombrep">Nombre del producto:</label>
+            <input type="text" id="nombrep" name="nombrep" placeholder="Kakashi Hatake Shippuden Saga"><br>
+            <textarea name="descripcion"
+                style="width:300px; height:100px;">Figura Funko coleccionable de Kakashi Hatake de la Saga Naruto Shippudeninvocando chidori.</textarea>
+            <br>
+            <label for="sku">SKU:</label>
+            <input type="text" id="sku" name="sku" placeholder="NAR001012">
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" placeholder="$1799,00">
+            <label for="stock">Stock:</label>
+            <input type="number" id="stock" name="stock" placeholder="10"><br>
+            <label for="descuento">Descuento:</label>
+            <input type="number" id="descuento" name="descuento" placeholder="10%">
+            <select id="cuotas" name="cuotas">
+                <option value="6c">6 Cuotas sin interes</option>
+                <option value="3c">3 Cuotas sin interes</option>
+            </select>
+        </form>
+        <form action="">
+            <label for="archivo">Imágenes:</label>
+            <input type="file" id="archivo" name="archivo" >
+        </form>
+        <picture></picture>
+        <p>Frente</p>
+        <picture></picture>
+        <p>Dorso</p>
+        <button>Modificar Producto</button>
+    </main>
+</body>
+
+</html>
