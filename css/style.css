@@ -105,9 +105,9 @@ table {
 
 html {
     font-size: 62.5%; /*para usar "Em"*/
-    font-family: 'Inter', sans-serif;
-}
+    font-family: var(--base-font)
 
+}
 container {
     max-width: 1200px;
     margin: 0 auto;
@@ -120,10 +120,11 @@ a {
 }
 
 header, footer {
-    color: white;
-    font-family: 'Raleway', sans-serif;
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid)
+    font-family: var(--alternative-font)
 }
 
 p{
-    font-size: 1.8em; /*aqui deberia ir las variables*/
+    font-size: var(--font-medium) /*aqui deberia ir las variables*/
 }
