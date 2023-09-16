@@ -1,77 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item</title>
 </head>
-<body>
+
+<body id="item">
     <main>
         <section>
             <picture>
                 <img src="imagenes/star-wars/baby-yoda-1.webp" alt="img baby-yoda" width="300">
             </picture>
             <article>
-                <p> STAR WARS</p>
+                <p class="licencia"> STAR WARS</p>
                 <h3> BABY YODA BLUEBALL</h3>
-                <p> Figura coleccionable de Baby Yoda (Grogui)- The Mandalorian Saga, edición limitada.</p>
-                <p> 0 </p>
-                <p> Agregar a carrito </p>
-                <a href=""> Ver formas de pago </a> <p> 3 cuotas sin interés</p>
+                <p class="descripcion"> Figura coleccionable de Baby Yoda (Grogui)- The Mandalorian Saga, edición
+                    limitada.</p>
+                <p class="precio"> $1799,99</p>
+                <div>
+                    <input type="number"> 0 </type>
+                    <button> Agregar a carrito </button>
+                </div>
+                <span>
+                    <a href=""> Ver formas de pago </a>
+                    <p> 3 cuotas sin interés</p>
+                </span>
             </article>
         </section>
-        <section>
-            <h2> PRODUCTOS RELACIONADOS</h2>
-            <ul>
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="/imagenes/star-wars/trooper-1.webp" alt=" FIGURA COLECCIONABLE TROOPER">
-                            </picture>
-                            <div>
-                                <p>STAR WARS</p>
-                                <h4>STORMTROOPER LIGHTSABER</h4>
-                                <p> $ 1799,99</p>
-                                <p> 3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="/imagenes/pokemon/pidgeotto-1.webp" alt=" FIGURA COLECCIONABLE PIDGEOTTO">
-                            </picture>
-                            <div>
-                                <p>POKEMON</p>
-                                <h4>PIDGEOTTO</h4>
-                                <p> $ 1799,99</p>
-                                <p> 3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="imagenes/harry-potter/luna-1.webp" alt="FIGURA COLECCIONABLE harry-potter">
-                            </picture>
-                            <div>
-                                <p>HARRY POTTER</p>
-                                <h4>LUNA LOVEGOOD LION MARK</h4>
-                                <p> $ 1799,99 </p>
-                                <p> 3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li>
-            </ul>
-        </section>
-        
-    </main>
+        <section class="seccion-secundaria">
+            <h2>Productos Relacionados</h2>
+            <div class="slide">
+                <article class="card-item" id="articulo">
+                    <picture>
+                        <img src="img/starwars.jpg" alt="star wars">
+                    </picture>
+                    <div class="item">
+                        <p class="licencia">Star Wars</p>
+                        <h4>El Mandaloriano</h4>
+                        <p class="precio">$1799,99</p>
+                        <strong>3 cuotas sin interes</strong>
+                    </div>
+                    <span class="nuevo">nuevo</span>
     
+                </article>
+                <article class="card-item" id="articulo">
+                    <picture>
+                        <img src="img/pidgeotto.jpg" alt="PIDGEOTTO">
+                    </picture>
+                    <div class="item">
+                        <p class="licencia">Pokemon</p>
+                        <h4>PIDGEOTTO</h4>
+                        <p class="precio">$1799,99</p>
+                        <strong>3 cuotas sin interes</strong>
+                    </div>
+                    <span class="nuevo">nuevo</span>
+                </article>
+                <article class="card-item" id="articulo">
+                    <picture>
+                        <img src="img/starwars.jpg" alt="star wars">
+                    </picture>
+                    <div class="item">
+                        <p class="licencia">Harry Potter</p>
+                        <h4>LUNA loveGOOD LION MASK</h4>
+                        <p class="precio">$1799,99</p>
+                        <strong>3 cuotas sin interes</strong>
+                    </div>
+                    <span class="nuevo">nuevo</span>
+                </article>
+            </div>
+        </section>
+    
+    </main>
+
 </body>
+
 </html>
