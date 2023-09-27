@@ -12,20 +12,72 @@
         <div>
             <h1>Carrito de compras</h1>
         </div>
-        <section class="titulos ">
-            <a>
-                <h2>Detalle del producto</h2>
-            </a>
-            <a>
-                <h2>Cantidad</h2>
-            </a>
-            <a>
-                <h2>Total</h2>
-            </a>
-        </section>
 
+        <table>
+            <tr>
+                <th>Detalle de producto</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>
+                    <article class="card-item" id="articulo">
 
+                        <picture>
+                            <img src="../imagenes/multimedia/star-wars/baby-yoda-1.webp" alt="baby-yoda-1">
+                        </picture>
 
+                        <div class="item">
+                            <h4 class="nombre">Baby Yoda Blueball</h4>
+                            <p class="licencia">Stars Wars</p>
+                            <p class="precio">Precio:$1799,99</p>
+                        </div>
+                    </article>
+                </td>
+                <td>
+                    <input type=“number”>
+                    <div>
+                        <button>+</button>
+                        <button>-</button>
+                    </div>
+                </td>
+                <td>
+                    $3599,98
+                </td>
+                <td>
+                    <button class="eliminar"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <article class="card-item" id="articulo">
+
+                        <picture>
+                            <img src="../imagenes/multimedia/star-wars/baby-yoda-1.webp" alt="baby-yoda-1">
+                        </picture>
+
+                        <div class="item">
+                            <h4 class="nombre">Baby Yoda Blueball</h4>
+                            <p class="licencia">Stars Wars</p>
+                            <p class="precio">Precio:$1799,99</p>
+                        </div>
+                    </article>
+                </td>
+                <td>
+                    <input type=“number”>
+                    <div>
+                        <button>+</button>
+                        <button>-</button>
+                    </div>
+                </td>
+                <td>
+                    $3599,98
+                </td>
+                <td>
+                    <button class="eliminar"></button>
+                </td>
+            </tr>
+        </table>
 
         <section class="articulos">
             <div class="item">
@@ -43,61 +95,39 @@
                 </article>
 
 
-                <div class="cantidad">
-                    <input type=“number”>
-                    <div>
-                        <button>+</button>
-                        <button>-</button>
-                    </div>
-                </div>
+
                 <span class="total">
-                    $3599,98
+
                 </span>
                 <div class="eliminar">
-                    <button></button>
+
                 </div>
             </div>
-
-
-
-            <div class="item">
-                <article class="card-item" id="articulo">
-
-                    <picture>
-                        <img src="../imagenes/multimedia/star-wars/pidgeoto.webp" alt="pidgeoto">
-                    </picture>
-
-                    <div class="item">
-                        <h4 class="nombre">Pichoto</h4>
-                        <p class="licencia">Pokemon</p>
-                        <p class="precio">Precio:$1799,99</p>
-                    </div>
-                </article>
-
-
-                <div class="cantidad">
-                    <input type=“number”>
-                    <div>
-                        <button>+</button>
-                        <button>-</button>
-                    </div>
-                </div>
-                <span class="total">
-                    $3599,98
-                </span>
-                <div class="eliminar">
-                    <button></button>
-                </div>
-            </div>
-
         </section>
-
         <section>
             <div>
                 <h2>Resumen</h2>
             </div>
             <div class="resumen">
-                <div>
+                <table>
+                    <tr>
+                        <th>Cantidad de elementos</th>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th>Subtotal</th>
+                        <td>$5.399,97</td>
+                    </tr>
+                    <tr>
+                        <th>Envío</th>
+                        <td>$0,00</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <td>$5.399,97</td>
+                    </tr>
+                </table>
+                <!--<div>
                     <span>Cantidad de elementos</span>
                     <span>3</span>
                 </div>
@@ -112,12 +142,11 @@
                 <div class="total">
                     <span>Total</span>
                     <span>$5399,97</span>
-                </div>
+                </div> -->
             </div>
-            <div class="boton">
-                <a>Ir a pagar</a>
-            </div>
+            <a href="#" role="button"><button>Ir a pagar</button></a> <!-- uno o el otro -->
         </section>
+    </main>
 </body>
 
 </html>
