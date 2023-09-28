@@ -260,7 +260,8 @@ a {
 html {
     font-size: 62.5%;
     /*para usar "Em"*/
-    font-family: var(--base-font)
+    font-family: var(--base-font);
+    color: var(--dark-solid);
 }
 
 header,
@@ -285,15 +286,55 @@ header nav {
 nav ul {
     display: flex;
     align-items: center;
-    gap: var(--spacing-20);
-    font-size: var(--font-default);
     text-transform: uppercase;
+    gap: var(--spacing-20);
 }
 
 nav ul li img {
     width: 33px;
     height: 31px;
     margin-block: 39px;
+}
+
+nav > ul > li > a{
+    font-size: var(--font-default);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background-color .3s ease-in-out;
+}
+
+nav li:not(:last-child) a:hover{
+    background-color: var(--prymary-900);
+}
+.with-submenu{
+    width: 125px;
+}
+.with-icon{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8); 
+    position: relative;
+}
+._submenu{
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    background-color: var(--dark-bg-solid);
+    z-index: 3;
+    gap: 1px;
+
+}
+._submenu li{
+    display: none;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+}
+._submenu li:hover{
+    background-color: var(--prymary-900);
+}
+.with-submenu:hover ._submenu li{
+    display: block;
+
 }
 
 /* end header */
@@ -348,7 +389,12 @@ nav ul li img {
     border-radius: 50px;
     font-weight: 500;
     text-transform: uppercase;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
 
+}
+.cover a:hover{
+    background-color: var(--prymary-900);
+    color: var(--light-font-solid);
 }
 
 .collection article{
@@ -388,7 +434,7 @@ align-items: start;
 }
 
 .collection  a:hover{
-    background-color: var(--primary-solid);
+    background-color: var(--prymary-900);
 
 }
 
