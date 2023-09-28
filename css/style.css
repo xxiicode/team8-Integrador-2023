@@ -131,12 +131,13 @@ table {
 a {
     text-decoration: none;
     font-family: inherit;
-    color: black;
+    color: inherit;
 
 }
 
 /*//////////////////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////Global css//////////////////////*/
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
@@ -171,6 +172,7 @@ a {
     --font-jumbo: 3.8em;
     --font-xlarge: 3em;
     --font-large: 2.4em;
+    --font-default: 2em;
     --font-medium: 1.8em;
     --font-small: 1.6em;
     --font-xsmall: 1.4em;
@@ -233,7 +235,7 @@ a {
     a {
         text-decoration: none;
         font-family: inherit;
-    
+
     }
 
     .precio {
@@ -273,11 +275,127 @@ footer {
     margin: 0 auto;
 }
 
+/*///////////////////header css//////////////////////*/
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-/* header page*/
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+    font-size: var(--font-default);
+    text-transform: uppercase;
+}
+
+nav ul li img {
+    width: 33px;
+    height: 31px;
+    margin-block: 39px;
+}
+
 /* end header */
+/*///////////////////home//////////////////////*/
+.hero {
+    background-image: url(../assets/img/funkos-banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 
-/* HOME page*/
+    position: relative;
+}
+.hero::before{
+    content: '';
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px) brightness(0.9);
+    z-index: 1;
+
+
+}
+.cover {
+    /*     height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--spacing-20);
+    padding: var(--spacing-128);
+    position: relative;
+    z-index: 2;
+}
+.cover h3 {
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+    color: var(--light-font-solid);
+}
+.cover p {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+    font-size: var(--font-medium);
+}
+
+.cover a{
+    display: inline;
+    font-size: var(--font-medium);
+    background-color: var(--light-bg-solid);
+    padding: var(--spacing-12) var(--spacing-68);
+    border-radius: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+.collection article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection article div:first-of-type{
+display: flex;
+flex-direction: column;
+gap: var(--spacing-24);
+align-items: start;
+}
+
+.collection  h2{
+    font-size: var(--font-display);
+    font-family: var(--alternative-font);
+}
+.collection  p{
+    font-size: var(--font-large);
+    font-family: var(--alternative-font);
+    font-weight: 300;
+    border-bottom: 2px solid var(--primary-solid);
+    padding-bottom: var(--spacing-20);
+}
+
+.collection  a{
+    display: inline;
+    font-size: var(--font-medium);
+    font-weight: 500;
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-16) var(--spacing-36);
+    border-radius: 50px;
+    transition: background-color .3s ease-in-out;
+}
+
+.collection  a:hover{
+    background-color: var(--primary-solid);
+
+}
+
+.collection article:nth-child(2){
+    flex-direction: row-reverse;
+}
+
 
 /* end HOME */
 
