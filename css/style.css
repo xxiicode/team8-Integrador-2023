@@ -324,15 +324,16 @@ nav li:not(:last-child) a:hover{
     gap: 1px;
 
 }
-._submenu li{
+._submenu li a{
     display: none;
     padding: var(--spacing-8) var(--spacing-16);
     font-size: var(--font-medium);
+    transition: background-color .3s ease-in-out;
 }
-._submenu li:hover{
+._submenu li:hover a{
     background-color: var(--prymary-900);
 }
-.with-submenu:hover ._submenu li{
+.with-submenu:hover ._submenu li a{
     display: block;
 
 }
