@@ -18,11 +18,16 @@ spoiler, seria esto lo que tendrias que poner en el head!, y en ese orden para q
 
 =) saludos
 */
-/*body {
+body {
     background-color: var(--ligth-font-solid);
-}*/
+}
 
-/*SECTION BUSCADOR//*/
+.container {
+    display: flex;
+}
+
+
+/*SECTION BUSCADOR*/
 
 .buscador {
     display: flex;
@@ -30,26 +35,66 @@ spoiler, seria esto lo que tendrias que poner en el head!, y en ese orden para q
 }
 
 .search {
-    font-size: var(--font-small);
+    font-size: var(--font-xsmall);
+    padding: var(--spacing-12);
 }
-.search input{
+
+.search label {
+    font-weight: 600;
+}
+
+.search input {
     border-radius: 5px;
 }
 
 .order {
-    font-size: var(--font-small);
+    font-size: var(--font-xsmall);
+    padding: var(--spacing-12);
 }
 
-.order select{
+.order label {
+    font-weight: 600;
+}
+
+.order select {
+    border-radius: 5px;
+    width: 180px;
+}
+
+.precios {
+    font-size: var(--font-xsmall);
+    padding: var(--spacing-12);
+}
+
+h3 {
+    font-weight: 600;
+}
+
+.precios label {
+    font-weight: 500;
+}
+
+.precios input {
+    border-radius: 5px;
+    width: 30px;
+}
+
+.elegir {
+    font-size: var(--font-xsmall);
+    padding: var(--spacing-12);
+}
+
+.elegir input {
     border-radius: 5px;
 }
 
-/* SECTION CONTAINER//*/
+
+/* SECTION CONTAINER*/
 
 .item {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--spacing-24);
-    /* position: relative; */
 }
 
 .card-item {
@@ -60,33 +105,43 @@ spoiler, seria esto lo que tendrias que poner en el head!, y en ese orden para q
     position: relative;
 }
 
+.nuevo {
+    font-size: var(--font-xsmall);
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-12);
+    position: absolute;
+    right: 0;
+}
+
 .card-item-cover {
     display: flex;
     position: relative;
 }
 
 .card-item-cover img {
+    width: 300px;
+    height: 300px;
     animation: fade .7s;
 }
+
 .img-back {
     display: none;
 }
 
 .card-item-cover:hover .img-back {
     display: block;
-
 }
 
 .card-item-cover:hover .img-front {
     display: none;
-
 }
 
 .item-content {
-display: flex;
-flex-direction: column;
-gap: var(--spacing-12);
-padding: var(--spacing-16);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+    padding: var(--spacing-16);
 }
 
 .licencia {
@@ -109,14 +164,9 @@ padding: var(--spacing-16);
     color: var(--secondary-900);
 }
 
-
-.nuevo {
-    font-size: var(--font-xsmall);
-    background-color: var(--primary-solid);
-    color: var(--light-font-solid);
-    padding: var(--spacing-8) var(--spacing-12);
-    position: absolute;
-    /* right: 0; */
+.botones-paginas {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 
@@ -124,12 +174,8 @@ padding: var(--spacing-16);
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
-}
-
-
-.botones-paginas {
-    display: flex;
 }
