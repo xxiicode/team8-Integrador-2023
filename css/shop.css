@@ -18,3 +18,118 @@ spoiler, seria esto lo que tendrias que poner en el head!, y en ese orden para q
 
 =) saludos
 */
+/*body {
+    background-color: var(--ligth-font-solid);
+}*/
+
+/*SECTION BUSCADOR//*/
+
+.buscador {
+    display: flex;
+    flex-direction: column;
+}
+
+.search {
+    font-size: var(--font-small);
+}
+.search input{
+    border-radius: 5px;
+}
+
+.order {
+    font-size: var(--font-small);
+}
+
+.order select{
+    border-radius: 5px;
+}
+
+/* SECTION CONTAINER//*/
+
+.item {
+    display: flex;
+    gap: var(--spacing-24);
+    /* position: relative; */
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+    margin: var(--spacing-68) auto;
+    position: relative;
+}
+
+.card-item-cover {
+    display: flex;
+    position: relative;
+}
+
+.card-item-cover img {
+    animation: fade .7s;
+}
+.img-back {
+    display: none;
+}
+
+.card-item-cover:hover .img-back {
+    display: block;
+
+}
+
+.card-item-cover:hover .img-front {
+    display: none;
+
+}
+
+.item-content {
+display: flex;
+flex-direction: column;
+gap: var(--spacing-12);
+padding: var(--spacing-16);
+}
+
+.licencia {
+    font-size: var(--font-xsmall);
+    font-weight: 500;
+}
+
+.nombre {
+    font-size: var(--font-medium);
+    font-weight: 700;
+}
+
+.precio {
+    font-size: var(--font-small);
+}
+
+.promo {
+    font-size: var(--font-xsmall);
+    font-weight: 700;
+    color: var(--secondary-900);
+}
+
+
+.nuevo {
+    font-size: var(--font-xsmall);
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-12);
+    position: absolute;
+    /* right: 0; */
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.botones-paginas {
+    display: flex;
+}

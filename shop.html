@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOP</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/shop.css">
+
 </head>
 
 <body id="shop">
-    <main>
+    <main class="container">
         <section class="buscador">
             <form action="">
-                <div>
+                <div class="search">
                     <label for="buscar">BUSCAR</label><br>
                     <input type="text" id="buscar" name="buscar" placeholder="item o categoría">
                 </div>
-                <div>
+                <div class="order">
                     <label for="ordenar">ORDENAR POR</label><br>
                     <select name="ordenar" id="ordenar">
                         <option value="">Mayor a Menor</option>
                         <option value="0">$0</option>
                         <option value="1799">$1799.99</option>
-
                     </select>
                 </div>
                 <div>
@@ -44,134 +46,68 @@
                 </div>
             </form>
         </section>
-        <section class="items">
-            <article class="card-item" id="articulo">
 
-                <picture>
-                    <img src="./assets/img/star-wars/trooper-1.webp" alt="#">
-                </picture>
+        <section class="container">
 
-                <div class="item">
-                    <p class="licencia">Star Wars</p>
-                    <h4 class="nombre">Stormtrooper Lightsaber</h4>
-                    <p class="precio">$ 1799,99</p>
-                    <strong>3 CUOTAS SIN INTERÉS</strong>
-                </div>
-                <span class="nuevo">Nuevo</span>
-            </article>
-            <article class="card-item" id="articulo">
+            <div class="item container">
 
-                <picture>
-                    <img src="./assets/img/star-wars/trooper-1.webp" alt="#">
-                </picture>
+                <article class="card-item" id="articulo">
+                    <a href="">
+                        <span class="nuevo">NUEVO</span>
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/star-wars/trooper-1.webp" alt="#">
+                            <img class="img-back" src="./assets/img/star-wars/trooper-box.webp" alt="">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">STAR WARS</p>
+                            <h4 class="nombre">STORMTROOPER LIGTHSABER</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
 
-                <div class="item">
-                    <p class="licencia">Star Wars</p>
-                    <h4 class="nombre">Stormtrooper Lightsaber</h4>
-                    <p class="precio">$ 1799,99</p>
-                    <strong>3 CUOTAS SIN INTERÉS</strong>
-                </div>
-                <span class="nuevo">Nuevo</span>
-            </article>
-            <article class="card-item" id="articulo">
 
-                <picture>
-                    <img src="./assets/img/star-wars/trooper-1.webp" alt="#">
-                </picture>
+                </article>
 
-                <div class="item">
-                    <p class="licencia">Star Wars</p>
-                    <h4 class="nombre">Stormtrooper Lightsaber</h4>
-                    <p class="precio">$ 1799,99</p>
-                    <strong>3 CUOTAS SIN INTERÉS</strong>
-                </div>
-                <span class="nuevo">Nuevo</span>
-            </article>
-            <article class="card-item" id="articulo">
+                <article class="card-item" id="articulo">
+                    <a href="">
+                        <span class="nuevo">NUEVO</span>
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/pokemon/pidgeotto-1.webp" alt="#">
+                            <img class="img-back" src="./assets/img/pokemon/pidgeotto-box.webp" alt="">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">POKEMON</p>
+                            <h4 class="nombre">PIDGEOTTO</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
 
-                <picture>
-                    <img src="./assets/img/star-wars/trooper-1.webp" alt="#">
-                </picture>
 
-                <div class="item">
-                    <p class="licencia">Star Wars</p>
-                    <h4 class="nombre">Stormtrooper Lightsaber</h4>
-                    <p class="precio">$ 1799,99</p>
-                    <strong>3 CUOTAS SIN INTERÉS</strong>
-                </div>
-                <span class="nuevo">Nuevo</span>
-            </article>
-            <article class="card-item" id="articulo">
+                </article>
 
-                <picture>
-                    <img src="./assets/img/star-wars/trooper-1.webp" alt="#">
-                </picture>
+                <article class="card-item" id="articulo">
+                    <a href="">
+                        <span class="nuevo">NUEVO</span>
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/harry-potter/luna-1.webp" alt="#">
+                            <img class="img-back" src="./assets/img/harry-potter/luna-box.webp" alt="">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">HARRY POTTER</p>
+                            <h4 class="nombre">LUNA LOVEGOOD LION MASK</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
 
-                <div class="item">
-                    <p class="licencia">Star Wars</p>
-                    <h4 class="nombre">Stormtrooper Lightsaber</h4>
-                    <p class="precio">$ 1799,99</p>
-                    <strong>3 CUOTAS SIN INTERÉS</strong>
-                </div>
-                <span class="nuevo">Nuevo</span>
-            </article>
-            <article class="card-item" id="articulo">
+            </div>
 
-                <picture>
-                    <img src="./assets/img/star-wars/trooper-1.webp" alt="#">
-                </picture>
 
-                <div class="item">
-                    <p class="licencia">Star Wars</p>
-                    <h4 class="nombre">Stormtrooper Lightsaber</h4>
-                    <p class="precio">$ 1799,99</p>
-                    <strong>3 CUOTAS SIN INTERÉS</strong>
-                </div>
-                <span class="nuevo">Nuevo</span>
-            </article>
-            <article class="card-item" id="articulo">
-
-                <picture>
-                    <img src="./assets/img/star-wars/trooper-1.webp" alt="#">
-                </picture>
-
-                <div class="item">
-                    <p class="licencia">Star Wars</p>
-                    <h4 class="nombre">Stormtrooper Lightsaber</h4>
-                    <p class="precio">$ 1799,99</p>
-                    <strong>3 CUOTAS SIN INTERÉS</strong>
-                </div>
-                <span class="nuevo">Nuevo</span>
-            </article>
-            <article class="card-item" id="articulo">
-
-                <picture>
-                    <img src="./assets/img/star-wars/trooper-1.webp" alt="#">
-                </picture>
-
-                <div class="item">
-                    <p class="licencia">Star Wars</p>
-                    <h4 class="nombre">Stormtrooper Lightsaber</h4>
-                    <p class="precio">$ 1799,99</p>
-                    <strong>3 CUOTAS SIN INTERÉS</strong>
-                </div>
-                <span class="nuevo">Nuevo</span>
-            </article>
-            <article class="card-item" id="articulo">
-
-                <picture>
-                    <img src="./assets/img/star-wars/trooper-1.webp" alt="#">
-                </picture>
-
-                <div class="item">
-                    <p class="licencia">Star Wars</p>
-                    <h4 class="nombre">Stormtrooper Lightsaber</h4>
-                    <p class="precio">$ 1799,99</p>
-                    <strong>3 CUOTAS SIN INTERÉS</strong>
-                </div>
-                <span class="nuevo">Nuevo</span>
-            </article>
         </section>
+
         <div class="botones-paginas">
             <ul>
                 <li><button> # </button></li>
