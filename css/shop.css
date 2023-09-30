@@ -166,7 +166,8 @@ h3 {
 
 .botones-paginas {
     display: flex;
-    flex-wrap: nowrap;
+    align-items: end;
+    align-self: flex-end;
 }
 
 
