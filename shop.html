@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/shop.css">
+
+</head>
+<body id="shop">
+    <main class="container">
+        <section class="buscador">
+            <form action="">
+                <div class="search">
+                    <label for="buscar">BUSCAR</label><br>
+                    <input type="text" id="buscar" name="buscar" placeholder="item o categoría">
+                </div>
+                <div class="order">
+                    <label for="ordenar">ORDENAR POR</label><br>
+                    <select name="ordenar" id="ordenar">
+                        <option value="">Mayor a Menor</option>
+                        <option value="0">$0</option>
+                        <option value="1799">$1799.99</option>
+                    </select>
+                </div>
+                <div class="precios">
+                    <h3>PRECIO<h3>
+                            <label for="min">MIN</label>
+                            <input type="number" id="min" name="min" placeholder="0">
+                            <label for="max">- MAX</label>
+                            <input type="number" id="max" name="max" placeholder="0">
+                </div>
+                <div class="elegir">
+                    <h3>FILTRAR</h3>
+                    <input type="checkbox" id="nuevos" name="nuevos">
+                    <label for="nuevos">NUEVOS</label><br>
+                    <input type="checkbox" id="ofertas" name="ofertas">
+                    <label for="ofertas">OFERTAS</label> <br>
+                    <input type="checkbox" id="especial" name="especial">
+                    <label for="especial">EDICION ESPECIAL</label><br>
+                    <input type="checkbox" id="favoritos" name="favoritos">
+                    <label for="favoritos">FAVORITOS</label> <br>
+                </div>
+            </form>
+        </section>
+
+        <section class="container">
+            <div class="item">
+
+                <article class="card-item" id="articulo">
+                    <span class="nuevo">NUEVO</span>
+                    <a href="">
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/star-wars/trooper-1.webp"
+                                alt="Figura Funko de Star Wars: Stormtrooper">
+                            <img class="img-back" src="./assets/img/star-wars/trooper-box.webp"
+                                alt="Figura Funko de Star Wars: Stormtrooper en Caja">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">STAR WARS</p>
+                            <h4 class="nombre">STORMTROOPER LIGTHSABER</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-item" id="articulo">
+                    <span class="nuevo">NUEVO</span>
+                    <a href="">
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/pokemon/pidgeotto-1.webp"
+                                alt="Figura Funko de Pokemon: Pidgeotto">
+                            <img class="img-back" src="./assets/img/pokemon/pidgeotto-box.webp"
+                                alt="Figura Funko de Pokemon: Pidgeotto en Caja">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">POKEMON</p>
+                            <h4 class="nombre">PIDGEOTTO</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-item" id="articulo">
+                    <span class="nuevo">NUEVO</span>
+                    <a href="">
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/harry-potter/luna-1.webp"
+                                alt="Figura Funko de Harry Potter: Luna Lovegood">
+                            <img class="img-back" src="./assets/img/harry-potter/luna-box.webp"
+                                alt="Figura Funko de Harry Potter: Luna Lovegood en Caja">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">HARRY POTTER</p>
+                            <h4 class="nombre">LUNA LOVEGOOD LION MASK</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-item" id="articulo">
+                    <span class="nuevo">NUEVO</span>
+                    <a href="">
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/star-wars/trooper-1.webp"
+                                alt="Figura Funko de Star Wars: Stormtrooper">
+                            <img class="img-back" src="./assets/img/star-wars/trooper-box.webp"
+                                alt="Figura Funko de Star Wars: Stormtrooper en Caja">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">STAR WARS</p>
+                            <h4 class="nombre">STORMTROOPER LIGTHSABER</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-item" id="articulo">
+                    <span class="nuevo">NUEVO</span>
+                    <a href="">
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/pokemon/pidgeotto-1.webp"
+                                alt="Figura Funko de Pokemon: Pidgeotto">
+                            <img class="img-back" src="./assets/img/pokemon/pidgeotto-box.webp"
+                                alt="Figura Funko de Pokemon: Pidgeotto en Caja">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">POKEMON</p>
+                            <h4 class="nombre">PIDGEOTTO</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-item" id="articulo">
+                    <span class="nuevo">NUEVO</span>
+                    <a href="">
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/harry-potter/luna-1.webp"
+                                alt="Figura Funko de Harry Potter: Luna Lovegood">
+                            <img class="img-back" src="./assets/img/harry-potter/luna-box.webp"
+                                alt="Figura Funko de Harry Potter: Luna Lovegood en Caja">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">HARRY POTTER</p>
+                            <h4 class="nombre">LUNA LOVEGOOD LION MASK</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-item" id="articulo">
+                    <span class="nuevo">NUEVO</span>
+                    <a href="">
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/star-wars/trooper-1.webp"
+                                alt="Figura Funko de Star Wars: Stormtrooper">
+                            <img class="img-back" src="./assets/img/star-wars/trooper-box.webp"
+                                alt="Figura Funko de Star Wars: Stormtrooper en Caja">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">STAR WARS</p>
+                            <h4 class="nombre">STORMTROOPER LIGTHSABER</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-item" id="articulo">
+                    <span class="nuevo">NUEVO</span>
+                    <a href="">
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/pokemon/pidgeotto-1.webp"
+                                alt="Figura Funko de Pokemon: Pidgeotto">
+                            <img class="img-back" src="./assets/img/pokemon/pidgeotto-box.webp"
+                                alt="Figura Funko de Pokemon: Pidgeotto en Caja">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">POKEMON</p>
+                            <h4 class="nombre">PIDGEOTTO</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card-item" id="articulo">
+                    <span class="nuevo">NUEVO</span>
+                    <a href="">
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/harry-potter/luna-1.webp"
+                                alt="Figura Funko de Harry Potter: Luna Lovegood">
+                            <img class="img-back" src="./assets/img/harry-potter/luna-box.webp"
+                                alt="Figura Funko de Harry Potter: Luna Lovegood en Caja">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">HARRY POTTER</p>
+                            <h4 class="nombre">LUNA LOVEGOOD LION MASK</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <div class="botones-paginas">
+            <ul>
+                <li><button> # </button></li>
+                <li><button><a href="">1</a></button></li>
+                <li><button><a href="">2</a></button></li>
+                <li><button><a href="">...</a></button></li>
+                <li><button><a href="">9</a></button></li>
+                <li><button><a href="">10</a></button></li>
+                <li><button>></button></li>
+            </ul>
+        </div> 
+    </main>
+</body>
+
+</html>
