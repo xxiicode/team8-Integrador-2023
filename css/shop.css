@@ -1,23 +1,4 @@
-/* Prueba */
 
-/*Hola Agus, espero veas esto.
-esto te deberia aparecer la siguiente vez que hagas un fetch/pull 
-
-pero puede pasar que arranques a trabajar en algo antes de mirar el github. entonces ya trabajast aca sin ver esto.
-pero no te preocupes, no pasa nada. no es necesario que estes siempre mirando github.
-por eso vamos a estar siempre trabajando ademas en branchs separadas. asi que esta mal que este escrbiendo esto aca!!
-
-ademas te queria recordar que no te olvides de poner en el <head> del shop.html el link a tu nuevo archivo shop.css para que funcione,
-y tmp te olvides que ya hay codigo funcionando en style.css que sirve para todas las paginas que tmb tendrias que agregar.
-
-spoiler, seria esto lo que tendrias que poner en el head!, y en ese orden para que primero lea styles.css y luego shop.css
-
-
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link type="text/css" rel="stylesheet" href="css/shop.css">
-
-=) saludos
-*/
 body {
     background-color: var(--ligth-font-solid);
 }
