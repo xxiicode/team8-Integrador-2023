@@ -281,6 +281,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: var(--spacing-36);
 }
 
 nav ul {
@@ -293,7 +294,7 @@ nav ul {
 nav ul li img {
     width: 33px;
     height: 31px;
-    margin-block: 39px;
+    
 }
 
 nav > ul > li > a{
@@ -443,7 +444,14 @@ align-items: start;
     flex-direction: row-reverse;
 }
 
-
+/* seccion secunaria ultimos lanaizamientos */
+.seccion-secundaria h2{
+    font-size: var(--font-display);
+    text-transform: uppercase;
+}
+.slide {
+    display: flex;
+}
 /* end HOME */
 
 /* item page*/
@@ -452,3 +460,35 @@ align-items: start;
 /* carrito page*/
 
 /* end carrito */
+
+/*///////////////////footer//////////////////////*/
+footer {
+padding: var(--spacing-68) 0 var(--spacing-8) 0;
+}
+
+
+footer section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-transform: uppercase;
+    gap: var(--spacing-8);
+}
+
+footer ul a{
+    font-size: var(--font-medium);
+    
+}
+
+footer p{
+    font-size: var(--font-default);
+    text-align: center;
+    margin-top: var(--spacing-36);
+}
