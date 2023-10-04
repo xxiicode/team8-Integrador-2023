@@ -1,0 +1,24 @@
+.search {
+    display:flex;
+  justify-content:left;
+}
+
+.buscador {
+width: 50rem;
+height: 4rem;
+text-align: left;
+font-size: var(--font-medium);
+color: var(--dark-300);
+padding-left: 2%;
+border: 2px solid var(--dark-bg-solid);
+border-radius: 6px;
+margin-top: 2%;
+margin-left: 1%;
+margin-bottom: 2%;
+}
+
+h2 {
+    font-family: var(--alternative-font);
+    text-transform:uppercase;
+}
+
