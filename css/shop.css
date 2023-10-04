@@ -3,7 +3,7 @@ body {
     background-color: var(--ligth-font-solid);
 }
 
-.container {
+.flex {
     display: flex;
 }
 
