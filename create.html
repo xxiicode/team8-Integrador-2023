@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create / Admin</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
 </head>
-<body>
-    <main>
-        <h2> CREAR NUEVO ITEM</h2>
+
+<body id="create">
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <picture>
+                <a href="./index.html">
+                    <img src="assets/img/branding/full-logo.svg" alt="Homepage Logo ">
+                </a>
+            </picture>
+            <ul>
+                <li> <a href="shop.html">Ver tienda</a></li>
+                <li> <a href="#">Admin</a> </li>
+                <li> <a href="#">Salir</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- End Header -->
+    <main class="container">
+        <h1> Crear nuevo item</h1>
         <div>
-            
-            <form action="">
+            <form id="create-form" action="">
                 <div>
-                    <label for="category">Categoria:</label>
+                    <label for="category">categoría:</label>
                     <select name="" id="category">
                         <option value=""> Seleccionar</option>
+                        <option value=""> otro</option>
                     </select>
-                </div>
-                
-                <div>
+
                     <label for="licencia">Licencia:</label>
                     <select name="" id="licencia">
                         <option value=""> Seleccionar</option>
@@ -26,53 +45,66 @@
                 </div>
 
                 <div>
-                    <label for="product">Nombre del producto</label>
-                    <input type="text" placeholder="" id="product">
+                    <label for="product">Nombre del producto: </label>
+                    <input type="text" placeholder="Kakashi Hatake Shippuden Saga" id="product">
                 </div>
 
                 <div>
-                    <textarea name="" id="text"> escribe tu mensaje aqui</textarea>
+                    <textarea name="" placeholder="Descripción del producto" id="text"></textarea>
                 </div>
-                
+
                 <div>
-                    <label for="sku">Sku:</label>
+                    <label for="sku">SKU:</label>
                     <input type="text" placeholder="" id="sku">
-                </div>
-
-                <div>
+        
                     <label for="price">Precio:</label>
                     <input type="text" placeholder="" id="price">
-                </div>
 
-                <div>
                     <label for="stock">Stock:</label>
                     <input type="text" placeholder="" id="stock">
                 </div>
 
                 <div>
                     <label for="descuento">Descuento:</label>
-                    <input type="text" placeholder="" id="descuento">
-                </div>
+                    <input type="text" placeholder="0%" id="descuento">
 
-                <div>
                     <label for="cuotas">Cuotas:</label>
-                    <select type= "text"  id="cuotas">
-                        <option value=""> Seleccionar</option>
+                    <select type="text" id="cuotas">
+                        <option value="">3 Cuotas sin interés</option>
                     </select>
                 </div>
 
                 <div>
-                    <label for="">Imagenes</label>
+                    <label for="">Imágenes:</label>
+                    <button type="file" name="archivos" id="archivos">Elegir archivos</button>
+                    <p>No se ha seleccionado ningún archivo</p>
                 </div>
-
-                <button type="submit">Agregar producto</button>
-                <button type="submit">Limpiar</button>
-                
-                
-                
+                <div>
+                    <button type="submit">Agregar producto</button>
+                    <button type="submit">Limpiar</button>
+                </div>
             </form>
         </div>
 
     </main>
+        <!--fOOTER-->
+        <footer>
+            <section class="container">
+                <div>
+                    <ul>
+                        <li> <a href="./pages/shop.html"> SHOP </a> </li>
+                        <li> <a href="./pages/register.html"> REGISTRARSE </a> </li>
+                        <li> <a href="./pages/login.html"> INGRESAR </a> </li>
+                        <li> <a href="./pages/contact.html"> CONTACTO </a> </li>
+                    </ul>
+                    <picture>
+                        <a href="#"><img src="assets/img/branding/isotype.svg" alt="logo" width="143px"></a>
+                    </picture>
+                </div>
+                <p> All rights reserved 2023 - Funkoshop &copy</p>
+            </section>
+        </footer>
+        <!--end footer-->
 </body>
+
 </html>

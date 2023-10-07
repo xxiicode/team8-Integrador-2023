@@ -311,7 +311,9 @@ nav>ul>li>a {
 nav li:not(:last-child) a:hover {
     background-color: var(--prymary-900);
 }
-
+nav li:nth-child(3) a:hover {
+    background-color: var(--prymary-900);
+}
 .with-submenu {
     width: 125px;
 }
@@ -759,3 +761,87 @@ footer p {
     text-align: center;
     margin-top: var(--spacing-36);
 }
+
+
+
+/*/////////////////////////////////////////////ADMIN////////////////////////////////////////////// */
+
+/*///// Create //////*/
+#create-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+    width: 827.63px;
+}
+
+body#create h1 {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-block: var(--spacing-36);
+}
+
+#create-form label {
+font-size: var(--font-large);
+font-weight: 400;
+}
+
+#create-form select {
+    font-family: var(--base-font);
+    width: 243.03px;
+    height: 44.28px;
+    border-radius: 6px;
+    border: 2px solid var(--dark-solid);
+    font-size: var(--font-default);
+    padding-left: var(--spacing-8);
+
+  }
+
+#create-form input {
+    font-family: var(--base-font);
+    border:none;
+    border-bottom: var(--primary-solid) 2px solid;
+    font-size: 18px;
+    padding-inline: var(--spacing-8);
+    width: 50px;
+  }
+  #create-form div input#product {
+    width: 300px;
+  }
+  #create-form input:focus {
+    outline: none;
+  }
+
+  #create-form textarea {
+    font-family: var(--base-font);
+    font-size: 18px;
+    padding: var(--spacing-16);
+    resize: none;
+    width: 760px;
+    height: 194.83px;
+    border-radius: 4px;
+  }
+
+  #create-form div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #create-form p {
+    font-size: 14px;
+  }
+  #create-form button#archivos {
+    padding: 5px;
+  }
+
+    #create-form button[type="submit"] {
+        font-size: 14px;
+        font-weight: 600;
+        background-color: var(--prymary-900);
+        color: var(--light-font-solid);
+        padding: 14px 62px;
+        margin-bottom: 49px;
+        border: none;
+    }
