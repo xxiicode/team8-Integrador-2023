@@ -766,27 +766,27 @@ footer p {
 
 /*/////////////////////////////////////////////ADMIN////////////////////////////////////////////// */
 
-/*///// Create //////*/
-#create-form {
+/*///// Create & Edit //////*/
+.form-crear-editar {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-36);
     width: 827.63px;
 }
 
-body#create h1 {
+body#create h1, body#edit h1 {
     font-size: 42px;
     font-weight: 700;
     text-transform: uppercase;
     padding-block: var(--spacing-36);
 }
 
-#create-form label {
+.form-crear-editar label {
 font-size: var(--font-large);
 font-weight: 400;
 }
 
-#create-form select {
+.form-crear-editar select {
     font-family: var(--base-font);
     width: 243.03px;
     height: 44.28px;
@@ -797,22 +797,26 @@ font-weight: 400;
 
   }
 
-#create-form input {
+.form-crear-editar input {
     font-family: var(--base-font);
     border:none;
     border-bottom: var(--primary-solid) 2px solid;
     font-size: 18px;
     padding-inline: var(--spacing-8);
-    width: 50px;
+    width: 120px;
   }
-  #create-form div input#product {
+  .form-crear-editar div input#product {
     width: 300px;
   }
-  #create-form input:focus {
+    .form-crear-editar div input#stock,
+    .form-crear-editar div input#descuento {
+        width: 60px;
+    }
+  .form-crear-editar input:focus {
     outline: none;
   }
 
-  #create-form textarea {
+  .form-crear-editar textarea {
     font-family: var(--base-font);
     font-size: 18px;
     padding: var(--spacing-16);
@@ -822,26 +826,44 @@ font-weight: 400;
     border-radius: 4px;
   }
 
-  #create-form div {
+  .form-crear-editar div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
   }
 
-  #create-form p {
+  .form-crear-editar p {
     font-size: 14px;
   }
-  #create-form button#archivos {
+  .form-crear-editar button#archivos {
     padding: 5px;
   }
 
-    #create-form button[type="submit"] {
+    .form-crear-editar button[type="submit"] {
         font-size: 14px;
         font-weight: 600;
         background-color: var(--prymary-900);
         color: var(--light-font-solid);
-        padding: 14px 62px;
+        padding-block: 14px;
         margin-bottom: 49px;
         border: none;
+        width: 175px;
+    }
+
+
+    div.mini-imgs article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px
+    }
+    
+    div.mini-imgs article img {
+        border-bottom: 1px solid var(--primary-solid);
+    }
+
+    div.mini-imgs article span {
+        font-size: 20px;
+        font-weight: 500;
     }

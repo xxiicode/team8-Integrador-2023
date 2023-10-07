@@ -1,53 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDIT</title>
+    <title>Create / Admin</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
-    <main>
-        <h2>EDITAR ITEM</h2>
-        <form action="">
-            <label for="categoria">Categoría:</label>
-            <select id="categoria" name="categoria">
-                <option value="figuras">Figuras</option>
-                <!-- <option value=""></option> -->
-                <!-- <option value=""></option> -->
-            </select>
-            <label for="licencia">Licencia:</label>
-            <select id="licencia" name="licenciia">
-                <option value="Naruto">Naruto Shippuden</option>
-            </select><br>
-            <label for="nombrep">Nombre del producto:</label>
-            <input type="text" id="nombrep" name="nombrep" placeholder="Kakashi Hatake Shippuden Saga"><br>
-            <textarea name="descripcion"
-                style="width:300px; height:100px;">Figura Funko coleccionable de Kakashi Hatake de la Saga Naruto Shippudeninvocando chidori.</textarea>
-            <br>
-            <label for="sku">SKU:</label>
-            <input type="text" id="sku" name="sku" placeholder="NAR001012">
-            <label for="precio">Precio:</label>
-            <input type="number" id="precio" name="precio" placeholder="$1799,00">
-            <label for="stock">Stock:</label>
-            <input type="number" id="stock" name="stock" placeholder="10"><br>
-            <label for="descuento">Descuento:</label>
-            <input type="number" id="descuento" name="descuento" placeholder="10%">
-            <select id="cuotas" name="cuotas">
-                <option value="6c">6 Cuotas sin interes</option>
-                <option value="3c">3 Cuotas sin interes</option>
-            </select>
-        </form>
-        <form action="">
-            <label for="archivo">Imágenes:</label>
-            <input type="file" id="archivo" name="archivo" >
-        </form>
-        <picture></picture>
-        <p>Frente</p>
-        <picture></picture>
-        <p>Dorso</p>
-        <button>Modificar Producto</button>
+<body id="create">
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <picture>
+                <a href="./index.html">
+                    <img src="assets/img/branding/full-logo.svg" alt="Homepage Logo ">
+                </a>
+            </picture>
+            <ul>
+                <li> <a href="shop.html">Ver tienda</a></li>
+                <li> <a href="#">Admin</a> </li>
+                <li> <a href="#">Salir</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- End Header -->
+    <main class="container">
+        <h1> Crear nuevo item</h1>
+        <div>
+            <form class="form-crear-editar" action="">
+                <div>
+                    <label for="category">categoría:</label>
+                    <select name="" id="category">
+                        <option value=""> Figuras</option>
+                        <option value=""> otro</option>
+                    </select>
+
+                    <label for="licencia">Licencia:</label>
+                    <select name="" id="licencia">
+                        <option value=""> Naruto Shippuden</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="product">Nombre del producto: </label>
+                    <input type="text" placeholder="Kakashi Hatake Shippuden Saga " id="product">
+                </div>
+
+                <div>
+                    <textarea name="" placeholder="Descripción del producto" id="text">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.
+                    </textarea>
+                </div>
+
+                <div>
+                    <label for="sku">SKU:</label>
+                    <input type="text" placeholder="NAR001012" id="sku">
+
+                    <label for="price">Precio:</label>
+                    <input type="text" placeholder="$ 1.799,00" id="price">
+
+                    <label for="stock">Stock:</label>
+                    <input type="text" placeholder="10" id="stock">
+                </div>
+
+                <div>
+                    <label for="descuento">Descuento:</label>
+                    <input type="text" placeholder="10%" id="descuento">
+
+                    <label for="cuotas">Cuotas:</label>
+                    <select type="text" id="cuotas">
+                        <option value="">6 Cuotas sin interés</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="">Imágenes:</label>
+                    <button type="file" name="archivos" id="archivos">Elegir archivos</button>
+                    <p>No se ha seleccionado ningún archivo</p>
+                </div>
+                <div class="mini-imgs">
+                    <article>
+                        <img src="assets/img/naruto/kakashi_hatake_front.svg" alt="#">
+                        <span>Frente</span>
+                    </article>
+                    <article>
+                        <img src="assets/img/naruto/kakashi_hatake_back.svg" alt="#">
+                        <span>Dorso</span>
+                    </article>
+                </div>
+                <div>
+                    <button type="submit">Modificar productos</button>
+                </div>
+            </form>
+        </div>
+
     </main>
+    <!--fOOTER-->
+    <footer>
+        <section class="container">
+            <div>
+                <ul>
+                    <li> <a href="shop.html"> Shop </a> </li>
+                    <li> <a href="register.html"> Registrarse </a> </li>
+                    <li> <a href="login.html"> Ingresar </a> </li>
+                    <li> <a href="contact.html"> Contacto </a> </li>
+                </ul>
+                <picture>
+                    <a href="#"><img src="assets/img/branding/isotype.svg" alt="logo" width="143px"></a>
+                </picture>
+            </div>
+            <p> All rights reserved 2023 - Funkoshop &copy</p>
+        </section>
+    </footer>
+    <!--end footer-->
 </body>
 
 </html>
