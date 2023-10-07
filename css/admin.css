@@ -22,9 +22,9 @@ margin-bottom: 2%;
   align-items:baseline;
 }
 
-p {
-  font-size: var(--font-large);
+h2 {
   font-family: var(--alternative-font);
+  font-size: var(--font-jumbo);
   text-transform:uppercase;
 }
 .agregar {
@@ -34,6 +34,10 @@ p {
   
 }
 
+th {
+  text-transform: capitalize;
+
+}
 
 
 thead {
