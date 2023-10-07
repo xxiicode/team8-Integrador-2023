@@ -255,7 +255,9 @@ a {
     /*//////////////////////////////////////////////*/
 }
 
-
+*{
+    box-sizing: border-box;
+}
 
 
 html {
@@ -282,7 +284,8 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-36);
+    padding-inline:unset;
+    padding-block:var(--spacing-36);
 }
 
 nav ul {
@@ -545,7 +548,7 @@ nav li:not(:last-child) a:hover {
     flex-direction: row-reverse;
 }
 
-/* seccion secunaria ultimos lanaizamientos */
+/* seccion secunaria ultimos lanzamientos */
 .seccion-secundaria h2 {
     font-size: var(--font-display);
     text-transform: uppercase;
@@ -560,8 +563,169 @@ nav li:not(:last-child) a:hover {
 /* item page*/
 /* end item */
 
-/* carrito page*/
+/*///////////////////carrito//////////////////////*/
 
+body#carrito h1 {
+    font-size: var(--font-display);
+    text-transform: uppercase;
+    padding-top: var(--spacing-128);
+}
+
+.subrayado {
+    display: inline-block;
+    border-bottom: 5px solid var(--primary-solid);
+    padding-bottom: var(--spacing-8);
+}
+
+.--table {
+    width: 1200px;
+
+}
+
+.--titulo {
+    text-transform: uppercase;
+    font-size: var(--font-small);
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: var(--spacing-16);
+    padding-block: var(--spacing-16);
+    border-radius: 10px;
+    margin-block: var(--spacing-36);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.--titulo div:nth-child(1) {
+    padding-left: 125px;
+}
+.--titulo div:nth-child(2) {
+    padding-left: 75px;
+}
+.--titulo div:nth-child(3) {
+    padding-right: 220px;
+}
+
+.--carrito-articulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: var(--spacing-16);
+    padding-block: var(--spacing-36);
+    border-radius: 25px;
+    margin-block: var(--spacing-36);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.carrito-item {
+    width: 410px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.carrito-item picture img {
+    height: 118px;
+}
+
+.carrito-item h4 {
+    font-size: var(--font-large);
+    text-transform: uppercase;
+}
+
+.carrito-item p:first-of-type {
+    text-transform: uppercase;
+    font-size: var(--font-xsmall);
+    font-weight: 500;
+}
+
+.carrito-item p:last-of-type {
+    font-size: var(--font-xsmall);
+    font-weight: 400;
+    padding-top: var(--spacing-20);
+}
+
+.cantidad {
+    display: flex;
+}
+.cantidad input {
+    height: 40px;
+    width: 90px;
+
+}
+
+.cantidad div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-block: 2px;
+    margin-left: 6px;
+}
+.cantidad div svg {
+    cursor: pointer;
+}
+
+.eliminar {
+    cursor: pointer;
+}
+
+/*resumen*/
+body#carrito h2 {
+    font-size: var(--font-display);
+    text-transform: uppercase;
+    padding-top: var(--spacing-68);
+}
+
+body#carrito section:nth-child(3){
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.resumen {
+    width: 572px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: var(--spacing-16);
+    padding-block: var(--spacing-16);
+    border-radius: 10px;
+    margin-block: var(--spacing-36);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    gap: var(--spacing-20);
+}
+.resumen div {
+    display: flex;
+    justify-content: space-between;
+}
+.resumen div:nth-child(4){
+    padding-top: var(--spacing-8);
+    border-top: 2px solid var(--primary-solid) 
+}
+.resumen div:nth-child(4) strong,
+.resumen div:nth-child(4) span {
+    font-size: var(--font-default);
+}
+.resumen div strong{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: var(--font-small);
+    font-weight: 600;
+}
+.resumen div span{
+    display: inline-block;
+    font-size: var(--font-small);
+    font-weight: 700;
+    color: #747474;
+}
+
+body#carrito button {
+    color: var(--light-font-solid);
+    text-transform: uppercase;
+    background-color: var(--primary-solid);
+    font-weight: 700;
+    font-size: 32px;
+    padding: 15px;
+    width: 572px;
+    margin-bottom: var(--spacing-128);
+}
 /* end carrito */
 
 /*///////////////////footer//////////////////////*/
