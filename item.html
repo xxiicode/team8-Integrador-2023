@@ -6,121 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/item.css">
 </head>
 
 <body id="item">
-        <!-- Header -->
-        <header>
-            <nav class="container">
-                <picture>
-                    <a href="./index.html">
-                        <img src="assets/img/branding/full-logo.svg" alt="Homepage Logo ">
-                    </a>
-                </picture>
-                <ul>
-                    <li class="with-submenu"> <a class="with-icon" href="shop.html">Shop<svg width="13" height="10"
-                                viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M0.866943 2.43831L2.7614 0.695175L6.993 5.29412L10.4047 0.789575L12.4569 2.34391L7.18485 9.30469L0.866943 2.43831Z"
-                                    fill="white" />
-                            </svg></a>
-                        <ul class="_submenu">
-                            <li><a href="#">funkos</a></li>
-                            <li><a href="#">remeras</a></li>
-                            <li><a href="#">llaveros</a></li>
-                        </ul>
-                    </li>
-                    <li> <a href="#">Contacto</a> </li>
-                    <li> <a href="#">Login</a> </li>
-                    <li> <a href="carrito.html"> <img src="assets/img/icons/cart-icon.svg" alt="Ir al carrito de compra"> </a> </li>
-                </ul>
-            </nav>
-        </header>
-        <!-- End Header -->
-    
+<!-- Aca va el header -->
     <main>
         <section>
             <picture>
-                <img src="imagenes/star-wars/baby-yoda-1.webp" alt="img baby-yoda" width="300">
+                <img src="assets/img/star-wars/baby-yoda-1.webp" alt="Figura Funko de Star Wars: Baby Yoda" width="300">
             </picture>
             <article>
-                <p class="licencia"> STAR WARS</p>
-                <h3> BABY YODA BLUEBALL</h3>
-                <p class="descripcion"> Figura coleccionable de Baby Yoda (Grogui)- The Mandalorian Saga, edición
+                <p class="licencia">star wars</p>
+                <h3>baby yoda blueball</h3>
+                <p class="descripcion"> Figura coleccionable de Baby Yoda (Grogu)- The Mandalorian Saga, edición
                     limitada.</p>
-                <p class="precio"> $1799,99</p>
+                <p class="precio">$1799,99</p>
                 <div>
-                    <input type="number"> 0 </type>
-                    <button> Agregar a carrito </button>
+                    <input type="number">0</type>
+                    <button>agregar al carrito </button>
                 </div>
                 <span>
-                    <a href=""> Ver formas de pago </a>
-                    <p> 3 cuotas sin interés</p>
+                    <a href="">Ver métodos de pago </a>
+                    <p>3 cuotas sin interés</p>
                 </span>
             </article>
         </section>
         <section class="seccion-secundaria">
-            <h2>Productos Relacionados</h2>
-            <div class="slide">
-                <article class="card-item" id="articulo">
-                    <picture>
-                        <img src="img/starwars.jpg" alt="star wars">
-                    </picture>
-                    <div class="item">
-                        <p class="licencia">Star Wars</p>
-                        <h4>El Mandaloriano</h4>
-                        <p class="precio">$1799,99</p>
-                        <strong>3 cuotas sin interes</strong>
-                    </div>
-                    <span class="nuevo">nuevo</span>
+            <h3>productos relacionados</h3>
+            <section class="flex">
+                <div class="item">
     
-                </article>
-                <article class="card-item" id="articulo">
-                    <picture>
-                        <img src="img/pidgeotto.jpg" alt="PIDGEOTTO">
-                    </picture>
-                    <div class="item">
-                        <p class="licencia">Pokemon</p>
-                        <h4>PIDGEOTTO</h4>
-                        <p class="precio">$1799,99</p>
-                        <strong>3 cuotas sin interes</strong>
-                    </div>
-                    <span class="nuevo">nuevo</span>
-                </article>
-                <article class="card-item" id="articulo">
-                    <picture>
-                        <img src="img/starwars.jpg" alt="star wars">
-                    </picture>
-                    <div class="item">
-                        <p class="licencia">Harry Potter</p>
-                        <h4>LUNA loveGOOD LION MASK</h4>
-                        <p class="precio">$1799,99</p>
-                        <strong>3 cuotas sin interes</strong>
-                    </div>
-                    <span class="nuevo">nuevo</span>
-                </article>
-            </div>
-        </section>
+                    <article class="card-item" id="articulo">
+                        <span class="nuevo">nuevo</span>
+                        <a href="">
+                            <picture class="card-item-cover">
+                                <img class="img-front" src="./assets/img/star-wars/trooper-1.webp"
+                                    alt="Figura Funko de Star Wars: Stormtrooper">
+                                <img class="img-back" src="./assets/img/star-wars/trooper-box.webp"
+                                    alt="Figura Funko de Star Wars: Stormtrooper en Caja">
+                            </picture>
+                            <div class="item-content">
+                                <p class="licencia">star wars</p>
+                                <h4 class="nombre">stormtrooper ligthsaber</h4>
+                                <p class="precio">$ 1799,99</p>
+                                <p class="promo">3 cuotas sin interés</p>
+                            </div>
+                        </a>
+                    </article>
     
+                    <article class="card-item" id="articulo">
+                        <span class="nuevo">nuevo</span>
+                        <a href="">
+                            <picture class="card-item-cover">
+                                <img class="img-front" src="./assets/img/pokemon/pidgeotto-1.webp"
+                                    alt="Figura Funko de Pokemon: Pidgeotto">
+                                <img class="img-back" src="./assets/img/pokemon/pidgeotto-box.webp"
+                                    alt="Figura Funko de Pokemon: Pidgeotto en Caja">
+                            </picture>
+                            <div class="item-content">
+                                <p class="licencia">pokemon</p>
+                                <h4 class="nombre">pidgeotto</h4>
+                                <p class="precio">$ 1799,99</p>
+                                <p class="promo">3 cuotas sin interés</p>
+                            </div>
+                        </a>
+                    </article>
+    
+                    <article class="card-item" id="articulo">
+                        <span class="nuevo">nuevo</span>
+                        <a href="">
+                            <picture class="card-item-cover">
+                                <img class="img-front" src="./assets/img/harry-potter/luna-1.webp"
+                                    alt="Figura Funko de Harry Potter: Luna Lovegood">
+                                <img class="img-back" src="./assets/img/harry-potter/luna-box.webp"
+                                    alt="Figura Funko de Harry Potter: Luna Lovegood en Caja">
+                            </picture>
+                            <div class="item-content">
+                                <p class="licencia">harry potter</p>
+                                <h4 class="nombre">luna lovegood lion mask</h4>
+                                <p class="precio">$ 1799,99</p>
+                                <p class="promo">3 cuotas sin interés</p>
+                            </div>
+                        </a>
+                    </article>
+    </div>
+    </section>
     </main>
-    <!--fOOTER-->
-    <footer>
-        <section class="container">
-            <div>
-                <ul>
-                    <li> <a href="./pages/shop.html"> SHOP </a> </li>
-                    <li> <a href="./pages/register.html"> REGISTRARSE </a> </li>
-                    <li> <a href="./pages/login.html"> INGRESAR </a> </li>
-                    <li> <a href="./pages/contact.html"> CONTACTO </a> </li>
-                </ul>
-                <picture>
-                    <a href="#"><img src="assets/img/branding/isotype.svg" alt="logo" width="143px"></a>
-                </picture>
-            </div>
-            <p> All rights reserved 2023 - Funkoshop &copy</p>
-        </section>
-    </footer>
-    <!--end footer-->
+    <!--Aca va el footer-->
 </body>
 
 </html>

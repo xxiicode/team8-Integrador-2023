@@ -1,0 +1,97 @@
+
+body {
+    background-color: var(--ligth-font-solid);
+}
+
+/*SECTION SECUNDARIA*/
+
+h3 {
+    font-weight: 600;
+}
+
+.flex {
+    display: flex;
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-24);
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+    margin: var(--spacing-68) auto;
+    position: relative;
+}
+
+.nuevo {
+    font-size: var(--font-xsmall);
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-12);
+    position: absolute;
+    right: 0;
+}
+
+.card-item-cover {
+    display: flex;
+    position: relative;
+}
+
+.card-item-cover img {
+    width: 300px;
+    height: 300px;
+    animation: fade .7s;
+}
+
+.img-back {
+    display: none;
+}
+
+.card-item-cover:hover .img-back {
+    display: block;
+}
+
+.card-item-cover:hover .img-front {
+    display: none;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+    padding: var(--spacing-16);
+}
+
+.licencia {
+    font-size: var(--font-xsmall);
+    font-weight: 500;
+}
+
+.nombre {
+    font-size: var(--font-medium);
+    font-weight: 700;
+}
+
+.precio {
+    font-size: var(--font-small);
+}
+
+.promo {
+    font-size: var(--font-xsmall);
+    font-weight: 700;
+    color: var(--secondary-900);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
