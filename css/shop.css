@@ -3,17 +3,17 @@ body {
     background-color: var(--ligth-font-solid);
 }
 
-.container {
+.main-shop {
     display: flex;
+    flex-direction: row;
 }
-
 
 /*SECTION BUSCADOR*/
 
 .buscador {
-    display: flex;
-    flex-direction: column;
-}
+    display: block;
+    padding-top: 60px;
+} 
 
 .search {
     font-size: var(--font-xsmall);
@@ -26,6 +26,7 @@ body {
 
 .search input {
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .order {
@@ -40,6 +41,7 @@ body {
 .order select {
     border-radius: 5px;
     width: 180px;
+    margin-top: 10px;
 }
 
 .precios {
@@ -58,6 +60,7 @@ h3 {
 .precios input {
     border-radius: 5px;
     width: 30px;
+    margin-top: 10px;
 }
 
 .elegir {
@@ -67,10 +70,16 @@ h3 {
 
 .elegir input {
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 
-/* SECTION CONTAINER*/
+/* SECTION CARDS*/
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
 
 .item {
     display: flex;
@@ -103,7 +112,7 @@ h3 {
 .card-item-cover img {
     width: 300px;
     height: 300px;
-    animation: fade .7s;
+    animation: fade .7s ease;
 }
 
 .img-back {
@@ -145,10 +154,19 @@ h3 {
     color: var(--secondary-900);
 }
 
-.botones-paginas {
+.paginas {
     display: flex;
-    align-items: end;
-    align-self: flex-end;
+    justify-content: center;
+}
+
+.listado-pag {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding-bottom: 50px;
+    font-size: var(--font-small);
+    font-weight: 700;
+    gap: 5px;
 }
 
 
