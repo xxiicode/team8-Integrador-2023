@@ -279,6 +279,10 @@ footer {
     margin: 0 auto;
 }
 
+button {
+    cursor: pointer;
+}
+
 /*///////////////////header css//////////////////////*/
 header nav {
     display: flex;
