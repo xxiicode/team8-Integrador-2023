@@ -406,6 +406,7 @@ nav li:not(:last-child) a:hover {
 .nombre {
     font-size: var(--font-medium);
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .precio {

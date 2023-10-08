@@ -3,6 +3,61 @@ body {
     background-color: var(--ligth-font-solid);
 }
 
+/*SECTION SELECCIONADO*/
+.seleccionado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cantidades {
+    display: flex;
+    gap: 10px;
+    
+}
+.cantidades input{
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    
+    
+}
+
+.cantidad {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.sum-res {
+    background-color: var(--dark-bg-solid);
+    opacity: 90%;
+    color: var(--light-font-solid);
+    border: none;
+    
+    height: 11px;
+    text-align: center;
+}
+
+.agregar {
+    font-size: var(--font-xsmall);
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-12);
+    text-transform: capitalize;
+    /* text-align: center; */
+    border: none;
+    height: 25px;
+}
+
+.pagar {
+    font-size: var(--font-xsmall);
+    font-weight: 700;
+    color: var(--secondary-900);
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
 /*SECTION SECUNDARIA*/
 
 h3 {
@@ -34,6 +89,7 @@ h3 {
     padding: var(--spacing-8) var(--spacing-12);
     position: absolute;
     right: 0;
+    text-transform: uppercase;
 }
 
 .card-item-cover {
@@ -69,6 +125,7 @@ h3 {
 .licencia {
     font-size: var(--font-xsmall);
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .nombre {
@@ -84,6 +141,7 @@ h3 {
     font-size: var(--font-xsmall);
     font-weight: 700;
     color: var(--secondary-900);
+    text-transform: uppercase;
 }
 
 @keyframes fade {
