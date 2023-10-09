@@ -14,17 +14,37 @@ margin: var(--spacing-24);
     align-items: center;
 }
 
+.licencia {
+    font-size: var(--font-xsmall);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+.nombre {
+    font-size: var(--font-medium);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.descripcion {
+font-size: var(--font-xsmall);
+margin-top: 10px;
+}
+
+.precio {
+    font-size: var(--font-small);
+    margin-top: 10px;
+}
+
 .cantidades {
     display: flex;
     gap: 10px;
-    
+    margin-top: 10px;
 }
 .cantidades input{
     width: 60px;
-    
     text-align: center;
-    
-    
 }
 
 .cantidad {
@@ -57,6 +77,11 @@ margin: var(--spacing-24);
     color: var(--secondary-900);
     text-transform: capitalize;
     text-decoration: underline;
+}
+
+.metodos-pago {
+    display: flex;
+    margin-top: 10px;
 }
 
 /*SECTION SECUNDARIA*/
@@ -123,20 +148,20 @@ h3 {
     padding: var(--spacing-16);
 }
 
-.licencia {
+/* .licencia {
     font-size: var(--font-xsmall);
     font-weight: 500;
     text-transform: uppercase;
-}
-
+} */
+/* 
 .nombre {
     font-size: var(--font-medium);
     font-weight: 700;
-}
+} */
 
-.precio {
+/* .precio {
     font-size: var(--font-small);
-}
+} */
 
 .promo {
     font-size: var(--font-xsmall);
@@ -144,6 +169,7 @@ h3 {
     color: var(--secondary-900);
     text-transform: uppercase;
 }
+
 
 @keyframes fade {
     0% {
