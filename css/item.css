@@ -3,6 +3,10 @@ body {
     background-color: var(--ligth-font-solid);
 }
 
+.item-especifico {
+margin: var(--spacing-24);
+}
+
 /*SECTION SELECCIONADO*/
 .seleccionado {
     display: flex;
@@ -17,7 +21,7 @@ body {
 }
 .cantidades input{
     width: 60px;
-    height: 20px;
+    
     text-align: center;
     
     
@@ -26,7 +30,7 @@ body {
 .cantidad {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 2px;
 }
 
 .sum-res {
@@ -34,9 +38,6 @@ body {
     opacity: 90%;
     color: var(--light-font-solid);
     border: none;
-    
-    height: 11px;
-    text-align: center;
 }
 
 .agregar {
@@ -45,9 +46,9 @@ body {
     color: var(--light-font-solid);
     padding: var(--spacing-8) var(--spacing-12);
     text-transform: capitalize;
-    /* text-align: center; */
+    text-align: center; 
     border: none;
-    height: 25px;
+    
 }
 
 .pagar {
