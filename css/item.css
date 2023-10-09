@@ -4,14 +4,21 @@ body {
 }
 
 .item-especifico {
-margin: var(--spacing-24);
+margin: var(--spacing-28);
 }
 
 /*SECTION SELECCIONADO*/
+
 .seleccionado {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding-left: 30px; */
+}
+
+.img-item {
+height: 550px;
+width: 550px;
 }
 
 .licencia {
@@ -20,27 +27,29 @@ margin: var(--spacing-24);
     text-transform: uppercase;
 }
 
-
-.nombre {
-    font-size: var(--font-medium);
+.nombre-gde {
+    font-size: var(--font-large);
     font-weight: 700;
     margin-top: 10px;
+    text-transform: uppercase;
 }
 
 .descripcion {
-font-size: var(--font-xsmall);
+font-size: var(--font-small);
 margin-top: 10px;
+padding-right: 200px;
 }
 
-.precio {
-    font-size: var(--font-small);
+.precio-gde {
+    font-size: var(--font-xlarge);
+    font-weight: 400;
     margin-top: 10px;
 }
 
 .cantidades {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .cantidades input{
     width: 60px;
@@ -81,13 +90,21 @@ margin-top: 10px;
 
 .metodos-pago {
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 /*SECTION SECUNDARIA*/
 
-h3 {
-    font-weight: 600;
+.relacionados {
+padding: var(--spacing-36);
+margin-left: 40px;
+}
+
+h2 {
+    font-size: var(--font-xlarge);
+    font-family: var(--alternative-font);
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .flex {
@@ -147,21 +164,6 @@ h3 {
     gap: var(--spacing-12);
     padding: var(--spacing-16);
 }
-
-/* .licencia {
-    font-size: var(--font-xsmall);
-    font-weight: 500;
-    text-transform: uppercase;
-} */
-/* 
-.nombre {
-    font-size: var(--font-medium);
-    font-weight: 700;
-} */
-
-/* .precio {
-    font-size: var(--font-small);
-} */
 
 .promo {
     font-size: var(--font-xsmall);
