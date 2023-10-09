@@ -40,7 +40,7 @@ th, td {
 }
 .listado {
   display: flex;
- 
+  align-items:center;
   
   }
   .agregar {
