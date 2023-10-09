@@ -4,22 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text" rel="stylesheet" href="./css/style.css">
-    <link type="text" rel="stylesheet" href="./css/login.css">
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link type="text/css" rel="stylesheet" href="./css/login.css">
     <title>LOGIN</title>
 </head>
 
 <body>
     <main class="container">
         <h1>ingresar a mi cuenta</h1>
-        <form action="">
+        <form class="form-login" action="">
+            <div class="correo">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="johndoe@correo.com"><br>
+        </div>
+        <div>
             <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" placeholder="•••••••••"><br>
-            <a href=""><button>Ingresar</button></a>
+        </div>
+        <div>
+        <a href=""><button>Ingresar</button></a>
             <input type="checkbox" id="recordar" name="recordar">
             <label for="recordar">Recordarme</label>
+        </div>
         </form>
         <a href="">olvidé mi contraseña</a>
     </main>

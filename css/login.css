@@ -1,5 +1,30 @@
 h1 {
     font-family: var(--alternative-font);
-    font-size: var(--font-jumbo);
+    font-size: var(--font-display);
+    font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-solid);
+    margin-top: 100px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.correo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 400; 
+    text-align: center;
+}
+
+.correo input {
+    
 }
