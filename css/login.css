@@ -1,3 +1,7 @@
+body {
+    background-color: var(--light-font-solid);
+}
+
 h1 {
     font-family: var(--alternative-font);
     font-size: var(--font-display);
@@ -44,6 +48,7 @@ h1 {
 .contraseña {
     display: flex;
     align-items: center;
+    margin-top: 15px;
 }
 
 .contraseña label{
@@ -67,6 +72,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 .ingreso {
@@ -92,6 +98,7 @@ h1 {
     font-family: var(--base-font);
         font-size: var(--font-large);
         text-transform: capitalize;
+        margin-left: 5px;
 }
 
 .olvido {
