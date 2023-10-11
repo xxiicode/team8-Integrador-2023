@@ -13,9 +13,171 @@ body {
 }
 
 .h2-register {
+    font-family: var(--alternative-font);
+    font-size: var(--font-xlarge);
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--spacing-36);
+    gap: var(--spacing-28);
+}
+
+.nom-register {
+    display: flex;
+}
+
+.nom-register label {
     font-family: var(--base-font);
     font-size: var(--font-large);
-    font-weight: 400;  
+    font-weight: 400;
     text-transform: capitalize;
-
+    margin-left: 90px;
 }
+
+.nom-register input {
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    gap: 50px;
+    font-family: var(--base-font);
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 120px;
+}
+
+.ape-register {
+    display: flex;
+}
+
+.ape-register label {
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-left: 90px;
+}
+
+.ape-register input {
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    gap: 50px;
+    font-family: var(--base-font);
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 120px;
+}
+
+.cor-register {
+    display: flex;
+}
+
+.cor-register label {
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-left: 90px;
+}
+
+.cor-register input {
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    gap: 50px;
+    font-family: var(--base-font);
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 155px;
+}
+
+.cla-register {
+    display: flex;
+}
+
+.cla-register label {
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-left: 90px;
+}
+
+.cla-register input {
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    gap: 50px;
+    font-family: var(--base-font);
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 85px;
+}
+
+.rep-register {
+    display: flex;
+}
+
+.rep-register label {
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-left: 90px;
+}
+
+.rep-register input {
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    gap: 50px;
+    font-family: var(--base-font);
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.terminar-registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: 90px;
+}
+
+.btn-registro {
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-12);
+    text-transform: capitalize;
+    text-align: center;
+    border: none;
+    margin-right: 10px;
+    width: 130px;
+}
+
+.terminar-registro input {
+    border: 3px solid var(--dark-solid);
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.terminar-registro label {
+    font-family: var(--base-font);
+        font-size: var(--font-medium);
+        font-weight: 400;
+        text-transform: capitalize;
+        margin-left: 5px;
+}
+
+.acepto {
+        margin-left: 5px;
+        color: #1D84B5;
+}
+
+
