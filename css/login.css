@@ -2,7 +2,7 @@ body {
     background-color: var(--light-font-solid);
 }
 
-h1 {
+.h1-login {
     font-family: var(--alternative-font);
     font-size: var(--font-display);
     font-weight: 700;
