@@ -1,0 +1,13 @@
+body {
+    background-color: var(--light-font-solid);
+}
+
+.h1-register {
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-solid);
+    margin-top: 100px;
+}
