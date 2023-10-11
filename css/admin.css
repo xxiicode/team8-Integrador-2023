@@ -4,10 +4,11 @@
 }
 
 .buscador {
-width: 50rem;
+width: 45rem;
 height: 4rem;
 text-align: left;
 font-size: var(--font-medium);
+font-weight: 500;
 color: var(--dark-300);
 padding-left: 2%;
 border: 2px solid var(--dark-bg-solid);
@@ -16,39 +17,70 @@ margin-top: 2%;
 margin-left: 1%;
 margin-bottom: 2%;
 }
+.listado {
+  display: flex;
+ flex-direction: row nowrap;
+  align-items:flex-end;
+ 
+  }
 
-h2 {
+h1 {
+  display:inherit;
   font-family: var(--alternative-font);
   font-size: var(--font-jumbo);
   text-transform:uppercase;
+  font-weight:700;
+  width:50%;
+  flex-grow: 0.6;
 }
 
+  .agregar {
+    display:inherit;
+    font-size: var(--font-large);
+    text-transform:uppercase;
+    font-weight: 700;
+    align-content: center;
+    margin:auto;
+      
+  }
+
+  table{
+    table-layout:auto;
+    width: 94%;
+    justify-content: space-between;
+  }
 thead {
   font-family: var(--base-font);
-  font-size: var(--font-medium);
-  font-weight:bold;
+  font-size: var(--font-large);
+  font-weight:700;
+}
+thead th:nth-child(1) {
+  width: 5%;
+}
+
+thead th:nth-child(2) {
+  width: 12%;
+}
+
+thead th:nth-child(3) {
+  width: 36%;
+}
+
+thead th:nth-child(4) {
+  width: 36%;
 }
 
 td {
   font-family: var(--base-font);
-  font-size: var(--font-medium);
+  font-size: var(--font-large);
 }
 
 th, td {
  padding: var(--spacing-12);
  text-align: center;
+ 
 }
-.listado {
-  display: flex;
-  align-items:center;
-  
+
+  #codigo__producto, #categoria__producto {
+    text-transform: uppercase;
   }
-  .agregar {
-    font-size: var(--font-large);
-    text-transform:uppercase;
-    font-weight: bold;
-    text-align:right;
-    float:right;
-      
-  }
-  
