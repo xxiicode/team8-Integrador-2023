@@ -11,3 +11,11 @@ body {
     color: var(--dark-solid);
     margin-top: 100px;
 }
+
+.h2-register {
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 400;  
+    text-transform: capitalize;
+
+}
