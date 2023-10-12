@@ -8,10 +8,10 @@ ham.addEventListener('click', () => toggle());
 function toggle() {
     if (window.innerWidth <= 430) {
         let computedStyle = window.getComputedStyle(nav);
-        if (computedStyle.right === "-188px") {
+        if (computedStyle.right === "-214px") {
             nav.style.right = "0px";
         } else {
-            nav.style.right = "-188px";
+            nav.style.right = "-214px";
         }
     }
 }
