@@ -25,8 +25,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: var(--spacing-36);
+    margin-block: var(--spacing-36) var(--spacing-28);
     gap: var(--spacing-28);
+
 }
 
 .nom-register {
