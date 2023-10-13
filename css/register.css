@@ -182,3 +182,45 @@ body {
 }
 
 
+/* RESPONSIVE */
+@media (max-width: 720px) {
+    .h2-register {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .form-register {
+        margin-right: 60px;
+    }
+
+    .nom-register label {
+        margin-left: 10px;
+        font-size: var(--font-medium);
+    }
+
+    .ape-register label {
+        margin-left: 10px;
+        font-size: var(--font-medium);
+    }
+
+    .cor-register label {
+        margin-left: 10px;
+        font-size: var(--font-medium);
+    }
+
+    .cla-register label {
+        margin-left: 10px;
+        font-size: var(--font-medium);
+    }
+
+    .rep-register label {
+        margin-left: 10px;
+        font-size: var(--font-medium);
+    }
+
+    .terminar-registro {
+        flex-direction: column;
+        font-size: var(--font-medium);
+    }
+}
+
