@@ -182,3 +182,107 @@ body {
 }
 
 
+/* RESPONSIVE REGISTER*/
+@media (max-width: 720px) {
+
+    .h2-register {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .nom-register {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nom-register label {
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .nom-register input {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .ape-register {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .ape-register label {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .ape-register input {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .cor-register {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cor-register label {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .cor-register input {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .cla-register {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cla-register label {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .cla-register input {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .rep-register {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .rep-register label {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .rep-register input {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .terminar-registro {
+        margin-left: 30px;
+        margin-right: 30px;
+        gap: 0px; 
+    }
+
+    .btn-registro {
+        margin-right: 5px;
+        width: 100px;
+    }
+
+    .terminar-registro label {
+            font-size: var(--font-small);
+    } 
+}
+
