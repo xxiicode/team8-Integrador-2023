@@ -182,3 +182,43 @@ h2 {
         opacity: 1;
     }
 }
+
+
+/*RESPONSIVE ITEM*/
+
+@media (max-width: 900px) {
+
+    .seleccionado {
+        flex-direction: column;
+        
+        text-align: center;
+    }
+
+    .img-item {
+        width: 390px;
+        height: 390px;
+    }
+
+    .descripcion {
+        padding-right: 0px;
+    }
+
+    .cantidades {
+        justify-content: center;
+    }
+
+    .metodos-pago {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 40px;
+    }
+
+    .relacionados {
+        text-align: center;
+        padding: 0%;
+        margin-left: 0%;
+    }
+    
+}
