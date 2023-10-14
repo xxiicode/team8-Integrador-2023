@@ -182,15 +182,12 @@ body {
 }
 
 
-/* RESPONSIVE */
+/* RESPONSIVE REGISTER*/
 @media (max-width: 720px) {
+
     .h2-register {
         margin-left: 40px;
         margin-right: 40px;
-    }
-
-    .form-register {
-        margin-right: 60px;
     }
 
     .nom-register {
@@ -214,7 +211,6 @@ body {
         align-items: center;
         gap: 20px;
     }
-
 
     .ape-register label {
         margin-left: 0px;
@@ -275,7 +271,18 @@ body {
     }
 
     .terminar-registro {
-        margin-left: 0px;
+        margin-left: 30px;
+        margin-right: 30px;
+        gap: 0px; 
     }
+
+    .btn-registro {
+        margin-right: 5px;
+        width: 100px;
+    }
+
+    .terminar-registro label {
+            font-size: var(--font-small);
+    } 
 }
 
