@@ -112,3 +112,37 @@ body {
     text-align: center;
     margin-top: 20px;
 }
+
+/*RESPONSIVE LOGIN*/
+
+@media (max-width: 720px) {
+
+    .correo {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .correo label {
+        margin-left: 0px;
+    }
+
+    .correo input {
+        margin-left: 0px;
+    }
+
+    .contraseña {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contraseña label {
+        margin-left: 0px;
+    }
+
+    .contraseña input {
+        margin-left: 0px;
+    }
+    
+}
