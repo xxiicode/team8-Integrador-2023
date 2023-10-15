@@ -6,51 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
 </head>
 
 <body id="carrito">
     <!-- Header -->
     <header>
         <nav class="container">
-            <picture>
+            <picture class="logo">
                 <a href="./index.html">
                     <img src="assets/img/branding/full-logo.svg" alt="Homepage Logo ">
                 </a>
             </picture>
-            <ul>
-                <li class="with-submenu"> <a class="with-icon" href="shop.html">Shop<svg width="13" height="10"
-                            viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0.866943 2.43831L2.7614 0.695175L6.993 5.29412L10.4047 0.789575L12.4569 2.34391L7.18485 9.30469L0.866943 2.43831Z"
-                                fill="white" />
-                        </svg></a>
-                    <ul class="_submenu">
-                        <li><a href="#">funkos</a></li>
-                        <li><a href="#">remeras</a></li>
-                        <li><a href="#">llaveros</a></li>
-                    </ul>
-                </li>
-                <li> <a href="#">Contacto</a> </li>
-                <li> <a href="#">Login</a> </li>
-                <li> <a href="carrito.html"> <img src="assets/img/icons/cart-icon.svg" alt="Ir al carrito de compra">
-                    </a> </li>
+            <ul class="nav" id="nav">
+                <li> <a href="shop.html">Shop</a></li>
+                <li> <a href="wip.html">Contacto</a> </li>
+                <li> <a href="login.html">Login</a> </li>
+                <li> <a href="carrito.html"> <img src="assets/img/icons/cart-icon.svg"
+                            alt="Ir al carrito de compra"></a> </li>
             </ul>
+
         </nav>
+        <button class="hamburger" id="ham">
+            <img src="assets/img/icons/hamburger_icon.svg" alt="" height="30px" width="auto">
+        </button>
     </header>
     <!-- End Header -->
     <main class="container">
-        <div class="subrayado">
+        <div class="carrito--titulo subrayado">
             <h1>Carrito de compras</h1>
         </div>
 
-        <section class="--table">
-            <div class="--titulo">
-                <div>Detalle de producto</div>
+        <section class="carrito--table">
+            <div class="carrito--articulo carrito--table-titulo">
+                <div class="carrito-item">Detalle de producto</div>
                 <div>Cantidad</div>
                 <div>Total</div>
+                <div> </div>
             </div>
 
-            <div class="--carrito-articulo">
+            <div class="carrito--articulo">
                 <article class="carrito-item" id="articulo">
 
                     <picture>
@@ -58,7 +53,7 @@
                     </picture>
 
                     <div>
-                        <h4 class="nombre">Baby Yoda Blueball</h4>
+                        <h4 class="nombre">Baby Yoda</h4>
                         <p class="licencia">Stars Wars</p>
                         <p class="precio">Precio:$1799,99</p>
                     </div>
@@ -96,7 +91,7 @@
                     </a>
                 </div>
             </div>
-            <div class="--carrito-articulo">
+            <div class="carrito--articulo">
                 <article class="carrito-item" id="articulo">
 
                     <picture>
@@ -144,13 +139,13 @@
             </div>
         </section>
 
-        <section>
+        <section class="resumen">
             <div class="subrayado">
                 <h2>Resumen</h2>
             </div>
-            <div class="resumen">
+            <div class="resumen--table">
                 <div>
-                    <strong>Cantidad de elementos</strong>
+                    <strong>Cantidad</strong>
                     <span>3</span>
                 </div>
                 <div>
@@ -161,7 +156,7 @@
                     <strong>Envío</strong>
                     <span>$0,00</span>
                 </div>
-                <div class="total">
+                <div class="resumen--total">
                     <strong>Total</strong>
                     <span>$5399,97</span>
                 </div>
@@ -172,18 +167,18 @@
     <!--fOOTER-->
     <footer>
         <section class="container">
-            <div>
-                <ul>
-                    <li> <a href="shop.html"> SHOP </a> </li>
-                    <li> <a href="register.html"> REGISTRARSE </a> </li>
-                    <li> <a href="login.html"> INGRESAR </a> </li>
-                    <li> <a href="contact.html"> CONTACTO </a> </li>
+            <div class="footer">
+                <ul class="footer--nav">
+                    <li> <a href="shop.html">Shop</a> </li>
+                    <li> <a href="register.html">Registrarse</a> </li>
+                    <li> <a href="login.html">Ingresar</a> </li>
+                    <li> <a href="contact.html">Contacto</a> </li>
                 </ul>
-                <picture>
-                    <a href="#"><img src="assets/img/branding/isotype.svg" alt="logo" width="143px"></a>
+                <picture class="footer--img">
+                    <a href="index.html"><img src="assets/img/branding/isotype.svg" alt="logo" width="143px"></a>
                 </picture>
             </div>
-            <p> All rights reserved 2023 - Funkoshop &copy</p>
+            <p class="footer--rights"> All rights reserved 2023 - Funkoshop &copy</p>
         </section>
     </footer>
     <!--end footer-->
