@@ -7,9 +7,29 @@
     <title>LOGIN</title>
     <link type="text/css" rel="stylesheet" href="./css/style.css">
     <link type="text/css" rel="stylesheet" href="./css/login.css">
+    <script defer src="js/main.js"></script>
 </head>
 
 <body>
+    <!-- header -->
+    <header>
+        <nav class="container">
+            <picture class="logo">
+                <a href="./index.html">
+                    <img src="assets/img/branding/full-logo.svg" alt="Homepage Logo ">
+                </a>
+            </picture>
+            <ul class="nav" id="nav">
+                <li> <a href="index.html">Ver tienda</a></li>
+                <li> <a href="admin.html">Admin</a> </li>
+                <li> <a href="login.html">Salir</a> </li>
+            </ul>
+
+        </nav>
+        <button class="hamburger" id="ham">
+            <img src="assets/img/icons/hamburger_icon.svg" alt="" height="30px" width="auto">
+        </button>
+    </header>
     <main class="container">
         <h1 class="h1-login">ingresar a mi cuenta</h1>
         <form class="form-login" action="">
@@ -22,13 +42,30 @@
                 <input type="password" id="password" name="password" placeholder="•••••••••"><br>
             </div>
             <div class="registro">
-                <a href=""><button class="ingreso">ingresar</button></a>
+                <a href="#"><button class="ingreso">ingresar</button></a>
                 <input type="checkbox" id="recordar" name="recordar">
                 <label for="recordar">recordarme</label>
             </div>
         </form>
-        <a class="olvido" href="">olvidé mi contraseña</a>
+        <a class="olvido" href="#">olvidé mi contraseña</a>
     </main>
+    <!-- footer -->
+    <footer>
+        <section class="container">
+            <div class="footer">
+                <ul class="footer--nav">
+                    <li> <a href="shop.html">Shop</a> </li>
+                    <li> <a href="register.html">Registrarse</a> </li>
+                    <li> <a href="login.html">Ingresar</a> </li>
+                    <li> <a href="contact.html">Contacto</a> </li>
+                </ul>
+                <picture class="footer--img">
+                    <a href="index.html"><img src="assets/img/branding/isotype.svg" alt="logo" width="143px"></a>
+                </picture>
+            </div>
+            <p class="footer--rights"> All rights reserved 2023 - Funkoshop &copy</p>
+        </section>
+    </footer>
 </body>
 
 </html>
