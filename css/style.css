@@ -282,6 +282,7 @@ footer {
 button {
     cursor: pointer;
 }
+
 .flex {
     display: flex;
 }
@@ -818,7 +819,7 @@ footer {
 /*///// Create & Edit //////*/
 .form-crear-editar {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: var(--spacing-36);
     max-width: 827.63px;
 }
@@ -1060,15 +1061,17 @@ div.mini-imgs article span {
     }
 
     /*END CARRITO*/
-        /* CREATE */
-        .form-crear-editar div {
-        flex-direction: column;
+    /* CREATE */
+    .form-crear-editar div {
+        flex-wrap: wrap;
         align-items: flex-start;
-        }
-        .form-crear-editar {
+    }
+
+    .form-crear-editar {
         align-content: center;
         flex-wrap: wrap;
     }
+
     /* END CREATE */
 }
 
