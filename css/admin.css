@@ -19,30 +19,29 @@ margin-bottom: 2%;
 }
 .listado {
   display: flex;
- flex-direction: row nowrap;
-  align-items:flex-end;
- 
-  }
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 93%;
+}
 
 h1 {
-  display:inherit;
   font-family: var(--alternative-font);
   font-size: var(--font-jumbo);
   text-transform:uppercase;
   font-weight:700;
-  width:50%;
-  flex-grow: 0.6;
+  align-self: center;
 }
 
-  .agregar {
-    display:inherit;
-    font-size: var(--font-large);
-    text-transform:uppercase;
-    font-weight: 700;
-    align-content: center;
-    margin:auto;
-      
-  }
+
+.agregar{
+  font-size: var(--font-large);
+  text-transform:uppercase;
+  font-weight: 700;
+align-self:center;
+vertical-align:50%;
+margin: auto;
+}
 
   table{
     table-layout:auto;
