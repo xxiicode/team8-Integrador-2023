@@ -7,40 +7,33 @@
     <title>SHOP</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link type="text/css" rel="stylesheet" href="css/shop.css">
-
+    <script defer src="js/main.js"></script>
 </head>
 
 <body id="shop">
     <!-- Header -->
     <header>
         <nav class="container">
-            <picture>
+            <picture class="logo">
                 <a href="./index.html">
                     <img src="assets/img/branding/full-logo.svg" alt="Homepage Logo ">
                 </a>
             </picture>
-            <ul>
-                <li class="with-submenu"> <a class="with-icon" href="shop.html">Shop<svg width="13" height="10"
-                            viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0.866943 2.43831L2.7614 0.695175L6.993 5.29412L10.4047 0.789575L12.4569 2.34391L7.18485 9.30469L0.866943 2.43831Z"
-                                fill="white" />
-                        </svg></a>
-                    <ul class="_submenu">
-                        <li><a href="#">funkos</a></li>
-                        <li><a href="#">remeras</a></li>
-                        <li><a href="#">llaveros</a></li>
-                    </ul>
-                </li>
-                <li> <a href="#">Contacto</a> </li>
-                <li> <a href="#">Login</a> </li>
-                <li> <a href="carrito.html"> <img src="assets/img/icons/cart-icon.svg" alt="Ir al carrito de compra">
-                    </a> </li>
+            <ul class="nav" id="nav">
+                <li> <a href="shop.html">Shop</a></li>
+                <li> <a href="wip.html">Contacto</a> </li>
+                <li> <a href="login.html">Login</a> </li>
+                <li> <a href="carrito.html"> <img src="assets/img/icons/cart-icon.svg"
+                            alt="Ir al carrito de compra"></a> </li>
             </ul>
+
         </nav>
+        <button class="hamburger" id="ham">
+            <img src="assets/img/icons/hamburger_icon.svg" alt="" height="30px" width="auto">
+        </button>
     </header>
     <!--fin Header-->
-    
+
     <div class="container">
         <main class="main-shop">
             <section class="buscador">
@@ -247,26 +240,55 @@
                     </div>
 
                 </section>
-                
+
                 <div class="center-btn">
 
                     <div class="listado-pag">
-                        <a href="item.html">&laquo;</a>
+                        <a href=""><svg width="15" height="15" viewBox="0 0 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.0481 10.6887L16.7506 17L23.0481 23.3113L21.1094 25.25L12.8594 17L21.1094 8.75L23.0481 10.6887Z"
+                                    fill="#C4CDD5" />
+                            </svg>
+                        </a>
                         <a href="" class="active">1</a>
-                        <a href="item.html">2</a>
-                        <a href="item.html">...</a>
-                        <a href="item.html">9</a>
-                        <a href="item.html">10</a>
-                        <a href="item.html">&raquo;</a>
+                        <a href="">2</a>
+                        <a href="">...</a>
+                        <a href="">9</a>
+                        <a href="">10</a>
+                        <a href="">
+                            <svg width="15" height="15" viewBox="0 0 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.6081 10.6887L17.9056 17L11.6081 23.3113L13.5469 25.25L21.7969 17L13.5469 8.75L11.6081 10.6887Z"
+                                    fill="#C4CDD5" />
+                            </svg>
+                        </a>
                     </div>
-                    
+
                 </div>
-                
-                </div>
-                
-                </main>
-                </div>
+
+            </div>
+
+        </main>
+    </div>
     <!-- Aca va el footer -->
+    <footer>
+        <section class="container">
+            <div class="footer">
+                <ul class="footer--nav">
+                    <li> <a href="shop.html">Shop</a> </li>
+                    <li> <a href="register.html">Registrarse</a> </li>
+                    <li> <a href="login.html">Ingresar</a> </li>
+                    <li> <a href="contact.html">Contacto</a> </li>
+                </ul>
+                <picture class="footer--img">
+                    <a href="index.html"><img src="assets/img/branding/isotype.svg" alt="logo" width="143px"></a>
+                </picture>
+            </div>
+            <p class="footer--rights"> All rights reserved 2023 - Funkoshop &copy</p>
+        </section>
+    </footer>
 </body>
 
 </html>
