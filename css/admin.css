@@ -149,6 +149,9 @@ td {
     gap: 10px; 
   }
 
+  .h1-adm {
+    font-size: var(--font-medium);
+  }
 }
 
 @media (max-width: 470px) {
