@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link type="text/css" rel="stylesheet" href="css/item.css">
     <script defer src="js/main.js"></script>
+
 </head>
 
 <body id="item">
@@ -45,10 +46,10 @@
                             limitada.</p>
                         <p class="precio-gde">$1799,99</p>
                         <div class="cantidades">
-                            <input type="number" placeholder="0">
+                            <input type="number" name="quantity" id="quantity" placeholder="0">
                             <div class="cantidad">
-                            <button class="sum-res">+</button>
-                            <button class="sum-res">-</button>
+                            <button id="item-sumar" class="sum-res">+</button>
+                            <button id="item-restar" class="sum-res">-</button>
                         </div>
                             <button class="agregar">agregar al carrito </button>
                         </div>
@@ -137,6 +138,8 @@
             <p class="footer--rights"> All rights reserved 2023 - Funkoshop &copy</p>
         </section>
     </footer>
+
+    <script src="js/item.js"></script>
 </body>
 
 </html>
