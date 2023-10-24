@@ -466,7 +466,18 @@ nav li:nth-child(3) a:hover {
 }
 
 /*///////////////////End Componente ITEM//////////////////////*/
-
+/* SLIDER */
+iconify-icon {
+    color: var(--dark-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
+}
+.glide__arrow--left {
+    left: 0;
+}
+.glide__arrow--right {
+    right: 0;
+}
 
 /*///////////////////home//////////////////////*/
 .hero {

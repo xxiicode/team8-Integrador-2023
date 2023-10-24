@@ -15,6 +15,8 @@
     <!-- end meta-->
 
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
 </head>
@@ -82,61 +84,66 @@
             </div>
         </article>
     </main>
-    <section class="seccion-secundaria container">
+    <section class="seccion-secundaria container glide">
         <h2>Ultimos lanzamientos</h2>
-        <div class="slide">
-            <article class="card-item" id="articulo">
-                <span class="nuevo">NUEVO</span>
-                <a href="item.html">
-                    <picture class="card-item-cover">
-                        <img class="img-front" src="./assets/img/star-wars/trooper-1.webp"
-                            alt="Figura Funko de Star Wars: Stormtrooper">
-                        <img class="img-back" src="./assets/img/star-wars/trooper-box.webp"
-                            alt="Figura Funko de Star Wars: Stormtrooper en Caja">
-                    </picture>
-                    <div class="item-content">
-                        <p class="licencia">STAR WARS</p>
-                        <h4 class="nombre">STORMTROOPER LIGTHSABER</h4>
-                        <p class="precio">$ 1799,99</p>
-                        <p class="promo">3 CUOTAS SIN INTERÉS</p>
-                    </div>
-                </a>
-            </article>
-            <article class="card-item" id="articulo">
-                <span class="nuevo">NUEVO</span>
-                <a href="item.html">
-                    <picture class="card-item-cover">
-                        <img class="img-front" src="./assets/img/pokemon/pidgeotto-1.webp"
-                            alt="Figura Funko de Pokemon: Pidgeotto">
-                        <img class="img-back" src="./assets/img/pokemon/pidgeotto-box.webp"
-                            alt="Figura Funko de Pokemon: Pidgeotto en Caja">
-                    </picture>
-                    <div class="item-content">
-                        <p class="licencia">POKEMON</p>
-                        <h4 class="nombre">PIDGEOTTO</h4>
-                        <p class="precio">$ 1799,99</p>
-                        <p class="promo">3 CUOTAS SIN INTERÉS</p>
-                    </div>
-                </a>
-            </article>
-
-            <article class="card-item" id="articulo">
-                <span class="nuevo">NUEVO</span>
-                <a href="item.html">
-                    <picture class="card-item-cover">
-                        <img class="img-front" src="./assets/img/harry-potter/luna-1.webp"
-                            alt="Figura Funko de Harry Potter: Luna Lovegood">
-                        <img class="img-back" src="./assets/img/harry-potter/luna-box.webp"
-                            alt="Figura Funko de Harry Potter: Luna Lovegood en Caja">
-                    </picture>
-                    <div class="item-content">
-                        <p class="licencia">HARRY POTTER</p>
-                        <h4 class="nombre">LUNA LOVEGOOD LION MASK</h4>
-                        <p class="precio">$ 1799,99</p>
-                        <p class="promo">3 CUOTAS SIN INTERÉS</p>
-                    </div>
-                </a>
-            </article>
+        <div class="glide__track" data-glide-el="track">
+            <div class="slide glide__slides">
+                <article class="card-item glide__slide" id="articulo">
+                    <span class="nuevo">NUEVO</span>
+                    <a href="item.html">
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/star-wars/trooper-1.webp"
+                                alt="Figura Funko de Star Wars: Stormtrooper">
+                            <img class="img-back" src="./assets/img/star-wars/trooper-box.webp"
+                                alt="Figura Funko de Star Wars: Stormtrooper en Caja">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">STAR WARS</p>
+                            <h4 class="nombre">STORMTROOPER LIGTHSABER</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-item glide__slide" id="articulo">
+                    <span class="nuevo">NUEVO</span>
+                    <a href="item.html">
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/pokemon/pidgeotto-1.webp"
+                                alt="Figura Funko de Pokemon: Pidgeotto">
+                            <img class="img-back" src="./assets/img/pokemon/pidgeotto-box.webp"
+                                alt="Figura Funko de Pokemon: Pidgeotto en Caja">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">POKEMON</p>
+                            <h4 class="nombre">PIDGEOTTO</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card-item glide__slide" id="articulo">
+                    <span class="nuevo">NUEVO</span>
+                    <a href="item.html">
+                        <picture class="card-item-cover">
+                            <img class="img-front" src="./assets/img/harry-potter/luna-1.webp"
+                                alt="Figura Funko de Harry Potter: Luna Lovegood">
+                            <img class="img-back" src="./assets/img/harry-potter/luna-box.webp"
+                                alt="Figura Funko de Harry Potter: Luna Lovegood en Caja">
+                        </picture>
+                        <div class="item-content">
+                            <p class="licencia">HARRY POTTER</p>
+                            <h4 class="nombre">LUNA LOVEGOOD LION MASK</h4>
+                            <p class="precio">$ 1799,99</p>
+                            <p class="promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon icon="ic:twotone-chevron-left"></iconify-icon></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon icon="ic:twotone-chevron-right"></iconify-icon></button>
         </div>
     </section>
 
@@ -158,6 +165,26 @@
         </section>
     </footer>
     <!--end footer-->
+    <!-- scripts -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 3,
+            gap: 30,
+            breakpoints: {
+                991: {
+                    perView: 2
+                },
+                768: {
+                    perView: 1
+                }
+            }
+        }).mount()
+    </script>
+    <!-- end scripts -->
 </body>
 
 </html>
