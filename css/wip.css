@@ -44,10 +44,12 @@ body{
 
     .wip {
         font-size: var(--font-medium);
+        margin-top: var(--spacing-68);
     }
 
     .wip2 {
         font-size: var(--font-small);
+        margin-bottom: var(--spacing-68);
     }
 
 } 
