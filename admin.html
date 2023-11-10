@@ -10,8 +10,27 @@
 <body>
 
     <!--header-->
+    <header>
+        <nav class="container">
+            <picture class="logo">
+                <a href="./index.html">
+                    <img src="assets/img/branding/full-logo.svg" alt="Homepage Logo ">
+                </a>
+            </picture>
+            <ul class="nav" id="nav">
+                <li> <a href="index.html">Ver tienda</a></li>
+                <li> <a href="admin.html">Admin</a> </li>
+                <li> <a href="login.html">Salir</a> </li>
+            </ul>
+
+        </nav>
+        <button class="hamburger" id="ham">
+            <img src="assets/img/icons/hamburger_icon.svg" alt="" height="30px" width="auto">
+        </button>
+    </header>
 
 <main class="container">
+    <!-- <main> -->
     <div class="espacio-admin">
     <!--Searchbar-->
     <section class="searching">
@@ -33,22 +52,22 @@
                 <th>Código</th>
                 <th>Nombre del producto</th>
                 <th>Categoría</th>
-                <th> </th>
-                <th> </th>
+                <th></th>
+                <th></th>
             </tr>
         </thead>
-        <tbody>"
+        <tbody>
         <tr>
             <td id="id__producto">1</td>
             <td id="código__producto">STW001001</td>
             <td id="nombre__producto">baby yoda blueball</td>
             <td id="categoria__producto">star wars</td>
             <td>
-                <a href="./edit.html"><img src="assets/img/icons/edit_pencil.svg" alt="Dibujo de lapiz, boton para ir a editar el producto"></a>
+                <a href="./edit.html"><img class="ico-admin" src="assets/img/icons/edit_pencil.svg" alt="Dibujo de lapiz, boton para ir a editar el producto"></a>
                 </a>
                 </td>
             <td>
-                <a href="#"><img src="assets/img/icons/delete_trash.svg" lat="Dibujo de tacho de basura, boton para eliminar el producto">
+                <a href="#"><img class="ico-admin" src="assets/img/icons/delete_trash.svg" lat="Dibujo de tacho de basura, boton para eliminar el producto">
                 </a>
             </td>
         </tr>
@@ -57,7 +76,24 @@
     <!--End tabla productos-->
 </div>
 </main>
+
 <!-- Footer -->
+<footer>
+    <section class="container">
+        <div class="footer">
+            <ul class="footer--nav">
+                <li> <a href="shop.html">Shop</a> </li>
+                <li> <a href="register.html">Registrarse</a> </li>
+                <li> <a href="login.html">Ingresar</a> </li>
+                <li> <a href="contact.html">Contacto</a> </li>
+            </ul>
+            <picture class="footer--img">
+                <a href="index.html"><img src="assets/img/branding/isotype.svg" alt="logo" width="143px"></a>
+            </picture>
+        </div>
+        <p class="footer--rights"> All rights reserved 2023 - Funkoshop &copy</p>
+    </section>
+</footer>
 
 </body>
 </html>

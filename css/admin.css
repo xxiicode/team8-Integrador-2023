@@ -55,7 +55,6 @@
 table {
   table-layout: auto;
   width: 94%;
-  justify-content: space-between;
 }
 
 thead {
@@ -89,12 +88,15 @@ th,
 td {
   padding: var(--spacing-12);
   text-align: center;
-
 }
 
 #codigo__producto,
 #categoria__producto {
   text-transform: uppercase;
+}
+
+.ico-admin {
+max-width: 100px;
 }
 
 #nombre__producto {
@@ -142,6 +144,26 @@ td {
 
 }
 
+
+@media (max-width: 600px) {
+
+  .container {
+    padding-inline: 0px;
+  }
+  thead {
+  font-size: var(--font-medium);
+}
+
+  th, td {
+    padding: var(--spacing-8);
+  }
+
+  td {
+    font-size: var(--font-small);
+  }
+
+}
+
 @media (max-width: 500px) {
 
   .listado {
@@ -152,6 +174,7 @@ td {
   .h1-adm {
     font-size: var(--font-medium);
   }
+
 }
 
 @media (max-width: 470px) {
@@ -160,5 +183,30 @@ td {
     width: 250rem;
   }
   
+  table, th, td {
+    padding-left: 0px;
+  }
+
+  .ico-admin {
+    width: 20px;
+    height: 20px;
+    }
+
 }
 
+
+@media (max-width: 400px) {
+
+.espacio-admin {
+  margin: var(--spacing-8);
+}
+
+thead {
+  font-size: var(--font-xsmall);
+}
+
+  td {
+    font-size: var(--font-xsmall);
+  }
+
+}
