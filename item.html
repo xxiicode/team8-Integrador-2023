@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="shortcut icon" href="./assets/img/branding/isotype.svg" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css"> -->
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link type="text/css" rel="stylesheet" href="css/item.css">
     <script defer src="js/item.js"></script>
@@ -50,7 +51,8 @@
                     limitada.</p>
                 <p class="precio-gde">$1799,99</p>
                 <div class="cantidades">
-                    <input type="number" name="quantity" id="quantity" placeholder="0">
+                    <!-- <input type="number" name="quantity" id="quantity" placeholder="0"> -->
+                    <input type="text" name="quantity" id="quantity" placeholder="0">
                     <div class="cantidad">
                         <button id="item-sumar" class="sum-res">+</button>
                         <button id="item-restar" class="sum-res">-</button>
@@ -146,11 +148,11 @@
         </section>
     </footer>
     <!-- scripts -->
-    <script src="js/item.js"></script>
+    <script src="./js/item.js"></script>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script>
+    <!-- <script>
         new Glide('.glide', {
             type: 'carousel',
             startAt: 0,
@@ -165,7 +167,8 @@
                 }
             }
         }).mount()
-    </script>
+    </script> -->
+    <script src="./js/glide.js"></script>
     <!-- end scripts -->
 
 </body>
